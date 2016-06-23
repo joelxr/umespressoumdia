@@ -1,0 +1,30 @@
+{
+  "name": "umespressoumdia",
+  "version": "1.0.0",
+  "description": "Um espresso, um dia.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelxr/umespressoumdia.git"
+  },
+  "author": "Joel Rocha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joelxr/umespressoumdia/issues"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-jekyll": "^0.4.4",
+    "load-grunt-tasks": "^3.5.0"
+  }
+}

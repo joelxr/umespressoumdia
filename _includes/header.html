@@ -1,0 +1,16 @@
+<header>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center"><i class="fa fa-coffee"></i> {{site.title}}</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    {% for my_page in site.pages %}
+                    {% if my_page.title %}
+                    <li><a  href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>

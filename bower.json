@@ -1,0 +1,25 @@
+{
+  "name": "umespressoumdia",
+  "description": "Um espresso, um dia.",
+  "main": "index.js",
+  "authors": [
+    "Joel Rocha"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "blog"
+  ],
+  "homepage": "http://www.projeto-descubra.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "assets/vendor"
+  ],
+  "dependencies": {
+    "font-awesome": "fontawesome#^4.6.1",
+    "Materialize": "materialize#^0.97.6",
+    "angular": "^1.5.6",
+    "font-abel": "^1.0.0"
+  }
+}
