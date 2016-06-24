@@ -14,4 +14,4 @@ before_script:
 script:
 - grunt build
 after_success:
-- sh deploy.sh
+- bash deploy.bash
