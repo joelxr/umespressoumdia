@@ -14,7 +14,7 @@ cd ..
 
 rm -rf out/**/* || exit 0
 
-grunt build
+#grunt build
 
 cd out
 git config user.name "Travis CI"
