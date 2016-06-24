@@ -6,3 +6,4 @@ node_modules
 assets/css
 assets/vendor
 Gemfile.lock
+secrets/private_key
