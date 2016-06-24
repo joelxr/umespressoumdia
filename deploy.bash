@@ -3,7 +3,9 @@ set -o errexit -o nounset
 
 rev=$(git rev-parse --short HEAD)
 
-cd stage/_site
+ls -la
+
+cd _site
 
 git init
 git config user.name "Joel Rocha"
