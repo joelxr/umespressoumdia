@@ -2,7 +2,7 @@ gems:              ["jekyll-paginate"]
 paginate:          5
 paginate_path:     "/posts/page:num/"
 permalink:         "/posts/:title/"
-url:               "http://www.umespressoumdia.com.br"
+url:               "https://joelxr.github.io/umespressoumdia/"
 markdown:          "Kramdown"
 title: Um espresso, um dia.
 excerpt_separator: <!-- excerpt -->
