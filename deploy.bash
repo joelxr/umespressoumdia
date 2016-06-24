@@ -3,8 +3,6 @@ set -o errexit -o nounset
 
 rev=$(git rev-parse --short HEAD)
 
-ls -la
-
 cd _site
 
 git init
