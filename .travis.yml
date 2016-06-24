@@ -14,4 +14,7 @@ before_script:
 script:
 - grunt build
 after_success:
-- bash deploy.bash
+- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash deploy.bash
+env:
+  global:
+    secure: fpqmc3ctcCKnFHzGdmlmKddKYyGGIp2NL/+8a+hdwK3F8qJlB1aifipXB7N/mILrcapJXJHpFaMPCImCKry420Rfp7NI2fFUK6UU/myNzGOUL1vgQjLE7v+uQgxNufSU18+m0R3obGhsnaU5lkOtB1PxUIEcBQKvKlxbOuwrsF/3P/YDOBhjdY+ZREirQAvoQ5NSfT71FrTeTH/uV1DswUNxwwZGe8WeuFRCus43uiqUpU7FcaRgujUTPfjkphE81/0IsHgoEZBAjFGn7cdqy2Oci7CdJu73GQyrH3Ds1XwEc1gtd1e2LorLv2xp+iT8FCi3lGVLu98jhOGMx07pzK0KXNkqa4aSBeb1CLUS0N1w/pZFrXIZbonn6S/GpF+WQXIAz/wAvLSBpZ1qQ42WHYkc239qfUTTc1PLjUcZq6sEOS6rjR0AoIA7uy0PUhS9S4VUcJ6q9o17QuaGO2mlxC9XCCM5xvF1Zc0QoJfukoixQ71HM9czXdg5LVMOUABce3O9y7qiG5RpNemIw2kP0LO8c5g+UYvUFY2cTzJ5CMH3WbKLxpm5rWtCSBB3+GTYQCQUXe0JKJev8DBzmU5M6bFbYvcA03YJB9GzcgToD9Ll1t15haV4klght4534I5sns4ZXwOxxcZ2cxdtrSRG5NLxcPvp5ePAQHi5SZ9rnWI=
