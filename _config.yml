@@ -1,7 +1,7 @@
-gems:              ["jekyll-paginate", "jekyll-lunr-js-search"]
+gems:              ["jekyll-paginate"]
 paginate:          5
 paginate_path:     "/posts/page:num/"
-permalink:         "/posts/page/posts/:title/"
+permalink:         "/posts/:title/"
 url:               "http://www.umespressoumdia.com.br"
 markdown:          "Kramdown"
 title: Um espresso, um dia.
