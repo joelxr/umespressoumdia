@@ -1,5 +1,5 @@
 gems:              ["jekyll-paginate"]
-paginate:          5
+paginate:          9
 paginate_path:     "/posts/page:num/"
 permalink:         "/posts/:title/"
 url:               "https://joelxr.github.io/umespressoumdia/"

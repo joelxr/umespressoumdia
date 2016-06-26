@@ -3,21 +3,39 @@ layout: default
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+  <div class="row">
+    {% for post in paginator.posts%}
+    <div class="col s6 m4 l4">
+      <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="https://adbeus.com/wp-content/uploads/2012/06/cafe-vito-villeray-small.jpg">
+        </div>
+        <div class="card-content">
+          <i class="fa fa-user" aria-hidden="true"></i> <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <i class="fa fa-calendar" aria-hidden="true"></i> <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title">Teste<i class="material-icons right">close</i></span>
+          <p>{{ post.date | date: "%b %-d, %Y" }}</p>
+        </div>
+      </div>
+    </div>
     {% endfor %}
-  </ul>
+  </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <ul class="pagination">
+    {% if paginator.previous_page %}
+      <li><a href="{{ paginator.previous_page_path }}" class="previous"><i class="material-icons">chevron_left</i></a></li>
+    {% else %}
+      <li><a href="{{ paginator.previous_page_path }}" class="previous disabled"><i class="material-icons">chevron_left</i></a></li>
+    {% endif %}
 
+    <li class="active"><span class="page_number ">{{ paginator.page }}</span></li>
+
+    {% if paginator.next_page %}
+      <li><a href="{{ paginator.next_page_path }}" class="next"><i class="material-icons">chevron_right</i></a></li>
+    {% else %}
+      <li><a href="{{ paginator.next_page_path }}" class="next disabled"><i class="material-icons">chevron_right</i></a></li>
+    {% endif %}
+    </ul>
 </div>
