@@ -10,7 +10,7 @@ layout: default
                     <img class="activator" src="https://adbeus.com/wp-content/uploads/2012/06/cafe-vito-villeray-small.jpg">
                 </div>
                 <div class="card-content center-align">
-                    <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">{{ post.titulo }}</a>
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">{{ post.title }}</a>
                 </div>
                 <div class="card-action right-align">
                     <a href="{{ post.url | prepend: site.baseurl }}" class="more-link right-align">
@@ -18,18 +18,18 @@ layout: default
                     </a>
                 </div>
                 <div class="card-reveal">
-                    <span class="card-title">{{ post.titulo }}<i class="right fa fa-times"></i></span>
+                    <span class="card-title">{{ post.title }}<i class="right fa fa-times"></i></span>
                     <ul style="margin-left: 2px;">
-                        <li><i class="fa fa-calendar"></i> {{ post.data | date: "%Y-%m-%d" }}</li>
-                        <li><i class="fa fa-map"></i> <a href="{{ post.localizacao_url }}">{{ post.localizacao }}</a></li>
-                        <li><i class="fa fa-envira"></i> Café {{ post.cafe }}</li>
-                        <li>{{ post.preco }}</li>
+                        <li><i class="fa fa-calendar"></i> {{ post.date | date: "%Y-%m-%d" }}</li>
+                        <li><i class="fa fa-map"></i> <a href="{{ post.location_url }}">{{ post.location }}</a></li>
+                        <li><i class="fa fa-envira"></i> Café {{ post.coffee }}</li>
+                        <li>{{ post.price }}</li>
                         <li>
-                            {% for i in (1..post.nota)  %}
+                            {% for i in (1..post.rate)  %}
                             <i class="fa fa-star"></i>
                             {% endfor %}
-                            {% assign n = (post.nota | floor) %}
-                            {% assign p = (post.nota | minus:n) %}
+                            {% assign n = (post.rate | floor) %}
+                            {% assign p = (post.rate | minus:n) %}
                             {% if p != 0 %}
                             <i class="fa fa-star-half-o"></i>
                             {% endif %}
@@ -44,10 +44,18 @@ layout: default
         <div class="col s4 m2 l1 offset-s8 offset-m10 offset-l11">
             <ul class="pagination">
                 {% if paginator.previous_page %}
-                <li><a href="{{ paginator.previous_page_path }}" class="previous"><i class="fa fa-arrow-circle-left"></i></a></li>
+                <li>
+                    <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous">
+                        <i class="fa fa-arrow-circle-left"></i>
+                    </a>
+                </li>
                 {% endif %}
                 {% if paginator.next_page %}
-                <li><a href="{{ paginator.next_page_path }}" class="next"><i class="fa fa-arrow-circle-right"></i></a></li>
+                <li>
+                    <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next">
+                        <i class="fa fa-arrow-circle-right"></i>
+                    </a>
+                </li>
                 {% endif %}
             </ul>
         </div>
