@@ -9,12 +9,12 @@ layout: default
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="https://adbeus.com/wp-content/uploads/2012/06/cafe-vito-villeray-small.jpg">
                 </div>
-                <div class="card-content">
-                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.titulo }}</a>
+                <div class="card-content center-align">
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">{{ post.titulo }}</a>
                 </div>
                 <div class="card-action right-align">
-                    <a href="{{ post.url }}" class="more-link">
-                        Detalhes<i class="fa fa-long-arrow-right"></i>
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="more-link right-align">
+                        Detalhes <i class="fa fa-long-arrow-right"></i>
                     </a>
                 </div>
                 <div class="card-reveal">

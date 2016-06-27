@@ -3,13 +3,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="og:url" content="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}">
-    <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:locale" content="pt_BR" />
-    <meta property="og:locale:alternate" content="en_US" />
-
     <meta name="robots" content="index"/>
     <meta name="googlebot" content="index"/>
     <meta name="google" content="nositelinkssearchbox"/>
@@ -31,15 +24,13 @@
     <link rel="author" href="humans.txt"/>
     <link rel="copyright" href="copyright.html"/>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-    <link type="text/css" rel="stylesheet" href="/assets/css/style.css"  media="screen,projection"/>
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+    <link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css"  media="screen,projection"/>
 
-    <link rel="icon" href="/assets/images/icons/favicon-16.png" sizes="16x16" type="image/png"/>
-    <link rel="icon" href="/assets/images/icons/favicon-32.png" sizes="32x32" type="image/png"/>
-    <link rel="icon" href="/assets/images/icons/favicon-48.png" sizes="48x48" type="image/png"/>
-    <link rel="icon" href="/assets/images/icons/favicon-62.png" sizes="62x62" type="image/png"/>
-    <link rel="icon" href="/assets/images/icons/favicon-192.png" sizes="192x192" type="image/png"/>
+    <link rel="icon" href="{{ site.baseurl }}/assets/images/icons/favicon-16.png" sizes="16x16" type="image/png"/>
+    <link rel="icon" href="{{ site.baseurl }}/assets/images/icons/favicon-32.png" sizes="32x32" type="image/png"/>
+    <link rel="icon" href="{{ site.baseurl }}/assets/images/icons/favicon-48.png" sizes="48x48" type="image/png"/>
+    <link rel="icon" href="{{ site.baseurl }}/assets/images/icons/favicon-62.png" sizes="62x62" type="image/png"/>
+    <link rel="icon" href="{{ site.baseurl }}/assets/images/icons/favicon-192.png" sizes="192x192" type="image/png"/>
 
     <title>{% if page.titulo %}{{ page.titulo | escape }}{% else %}{{ site.titulo | escape }}{% endif %}</title>
 </head>

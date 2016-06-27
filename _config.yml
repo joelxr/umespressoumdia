@@ -1,19 +1,20 @@
-gems:              ["jekyll-paginate"]
-paginate:          9
-paginate_path:     "/posts/page:num/"
-permalink:         "/posts/:title/"
-url:               "https://joelxr.github.io/umespressoumdia/"
-markdown:          "Kramdown"
+gems: ["jekyll-paginate"]
+paginate: 9
+paginate_path: "/posts/page:num/"
+permalink: "/posts/:title/"
+url: "www.umespressoumdia.cf"
+baseurl: "/umespressoumdia"
+markdown: "Kramdown"
 title: Um espresso, um dia.
 excerpt_separator: <!-- excerpt -->
 encoding: UTF-8
 
 exclude: [
-  'README.md',
-  'package.json',
-  'Gruntfile.js',
-  'node_modules',
-  'Gemfile*',
-  'assets/sass',
-  'assets/vendor'
+    'README.md',
+    'package.json',
+    'Gruntfile.js',
+    'node_modules',
+    'Gemfile*',
+    'assets/sass',
+    'assets/vendor'
 ]
