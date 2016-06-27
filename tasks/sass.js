@@ -13,7 +13,7 @@ module.exports = function(grunt){
                 style: 'expanded'
             },
             files: {
-                '_site/assets/css/style.css': 'assets/sass/style.sass'
+                '_site/assets/css/style.css': 'assets/sass/style.scss'
             }
         }
     });
