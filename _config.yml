@@ -6,8 +6,10 @@ url: "www.umespressoumdia.cf"
 baseurl: "/umespressoumdia"
 markdown: "Kramdown"
 title: Um espresso, um dia.
-excerpt_separator: <!-- excerpt -->
 encoding: UTF-8
+
+flickr:
+  api_key: 1a5ba1193f156aa871e5f0f456109186
 
 exclude: [
     'README.md',

@@ -9,8 +9,9 @@ layout: default
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="{{ post.cover-url }}">
                 </div>
-                <div class="card-content center-align">
-                    <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">{{ post.title }}</a>
+                <div class="card-content waves-effect waves-block waves-light">
+                     <spam class="post-link activator">{{ post.title }}</spam>
+                     <p class="activator">{{post.city}}/{{post.state}}</p>
                 </div>
                 <div class="card-action right-align">
                     <a href="{{ post.url | prepend: site.baseurl }}" class="more-link right-align">
@@ -20,10 +21,6 @@ layout: default
                 <div class="card-reveal">
                     <span class="card-title">{{ post.title }}<i class="right fa fa-times"></i></span>
                     <ul style="margin-left: 2px;">
-                        <li><i class="fa fa-calendar"></i> {{ post.date | date: "%Y-%m-%d" }}</li>
-                        <li><i class="fa fa-map"></i> <a href="{{ post.location_url }}">{{ post.location }}</a></li>
-                        <li><i class="fa fa-envira"></i> Café {{ post.coffee }}</li>
-                        <li>{{ post.price }}</li>
                         <li>
                             {% for i in (1..post.rate)  %}
                             <i class="fa fa-star"></i>
@@ -34,6 +31,19 @@ layout: default
                             <i class="fa fa-star-half-o"></i>
                             {% endif %}
                         </li>
+                        <li>
+                            <i class="fa fa-calendar"></i> {{ post.date | date: "%Y-%m-%d" }}
+                        </li>
+                        <li>
+                            <i class="fa fa-map"></i> <a href="{{ post.location_url }}">{{ post.location }}. {{post.city}}/{{post.state}}</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envira"></i> Café {{ post.coffee }}
+                        </li>
+                        <li>
+                            <i class="fa fa-credit-card"></i> {{ post.price }}
+                        </li>
+
                     </ul>
                 </div>
             </div>

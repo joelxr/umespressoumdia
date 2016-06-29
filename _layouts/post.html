@@ -4,15 +4,16 @@ layout: default
 <article class="black-text" itemscope itemtype="http://schema.org/BlogPosting">
 
     <div class="parallax-container">
-        <div class="parallax"><img src="{{ page.photo-1-url }}"></div>
+        <div class="parallax"><img src="{{ page.photo-1-url }}"></img></div>
     </div>
     <div class="section">
         <div class="container">
-            <h2 class="header">{{ page.title }}</h2>
-
-            <p class="fluid-text">
-            {{content}}
-            </p>
+            <div class="row">
+                <h2 class="header">{{ page.title }}</h2>
+            </div>
+            <div class="row">
+                {{content}}
+            </div>
 
             <div class="row">
                 <ul style="margin-left: 2px;">
@@ -31,6 +32,9 @@ layout: default
                         {% endif %}
                     </li>
                 </ul>
+            </div>
+            <div class="row">
+                {{page.location-map}}
             </div>
         </div>
     </div>
