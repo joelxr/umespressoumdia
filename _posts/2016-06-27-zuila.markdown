@@ -20,7 +20,7 @@ city: Fortaleza
 state: Ceará
 
 coffee: 3 Corações
-coffee-special:
+coffee-special: Sim
 coffee-region:
 coffee-farm:
 coffee-producer:
