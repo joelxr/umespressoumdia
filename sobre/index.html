@@ -42,17 +42,13 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo center"><i class="fa fa-coffee"></i> Um espresso, um dia.</a>
+                <a href="/" class="brand-logo center"><i class="fa fa-coffee"></i> Um espresso, um dia.</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     
                     
                     
                     
                     
-                    
-                    
-                    
-                    <li><a  href="/umespressoumdia/mapa/">Mapa</a></li>
                     
                     
                     
@@ -65,17 +61,16 @@
     </div>
 </header>
 
-        <article class="post container">
+        <article class="black-text">
+    <div class="container">
+        <div class="row">
+            <h1 class="post-title header">Sobre</h1>
+        </div>
+        <div class="row">
+            
 
-  <header class="post-header">
-    <h1 class="post-title">Sobre</h1>
-  </header>
-
-  <div class="post-content">
-    
-
-  </div>
-
+        </div>
+    </div>
 </article>
 
         <footer class="page-footer">
@@ -105,9 +100,15 @@
         <script type="text/javascript" src="/umespressoumdia/assets/js/jquery.js"></script>
 <script type="text/javascript" src="/umespressoumdia/assets/js/materialize.js"></script>
 <script type="text/javascript">
-    $(document).ready(function(){
-        $('.parallax').parallax();
+$(document).ready(function(){
+    $('.parallax').parallax();
+    $('.collapsible').collapsible({
+        accordion : false
     });
+    $('.slider').slider({
+        full_width: false
+    });
+});
 </script>
 
     </body>
