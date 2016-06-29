@@ -1,5 +1,4 @@
 ---
-
 layout: default
 ---
 <article class="black-text" itemscope itemtype="http://schema.org/BlogPosting">
@@ -7,7 +6,7 @@ layout: default
         <div class="container">
             <div class="row valign-wrapper">
                 <div class="col s10 m10 l3">
-                    <h1 class="header">{{ page.title }}</h1>
+                    <h2 class="header">{{ page.title }}</h2>
                     <h3>
                         {% for i in (1..page.rate)  %}
                         <i class="fa fa-star"></i>
@@ -24,7 +23,7 @@ layout: default
                     <p class="flow-text">
                     {{ page.content }}
                     </p>
-                    <ul class="collapsible" data-collapsible="accordion">
+                    <ul class="collapsible hoverable" data-collapsible="accordion">
                         <li>
                             <div class="collapsible-header">
                                 <i class="fa fa-phone"></i> {{ page.place-phone }}
