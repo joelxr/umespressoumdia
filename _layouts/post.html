@@ -2,26 +2,12 @@
 layout: default
 ---
 <article class="black-text" itemscope itemtype="http://schema.org/BlogPosting">
-
-    <div class="parallax-container">
-        <div class="parallax"><img src="{{ page.photo-1-url }}"></img></div>
-    </div>
     <div class="section">
         <div class="container">
             <div class="row">
-                <h2 class="header">{{ page.title }}</h2>
-            </div>
-            <div class="row">
-                {{content}}
-            </div>
-
-            <div class="row">
-                <ul style="margin-left: 2px;">
-                    <li><i class="fa fa-calendar"></i> {{ page.date | date: "%Y-%m-%d" }}</li>
-                    <li><i class="fa fa-map"></i> <a href="{{ page.location-url }}" class="black-text">{{ page.location }}</a></li>
-                    <li><i class="fa fa-envira"></i> Café {{ page.coffee }}</li>
-                    <li>{{ page.price }}</li>
-                    <li>
+                <div class="col s12 m5 l5 center-align">
+                    <h2 class="header">{{ page.title }}</h2>
+                    <h3>
                         {% for i in (1..page.rate)  %}
                         <i class="fa fa-star"></i>
                         {% endfor %}
@@ -30,15 +16,85 @@ layout: default
                         {% if p != 0 %}
                         <i class="fa fa-star-half-o"></i>
                         {% endif %}
-                    </li>
-                </ul>
+                    </h3>
+                    <h5>
+                        <i class="fa fa-calendar"></i> {{ page.date | date: "%d/%m/%y" }}
+                    </h5>
+                    <h4>
+                        <a href="mailto:{{ page.place-email }}"><i class="fa fa-email black-text"></i></a>
+                        <a href="{{ page.place-facebook }}"><i class="fa fa-facebook black-text"></i></a>
+                        <a href="{{ page.place-instagram }}"><i class="fa fa-instagram black-text"></i></a>
+                        <a href="{{ page.place-foursquare }}"><i class="fa fa-foursquare black-text"></i></a>
+                        <a href="{{ page.place-tripadvisor }}"><i class="fa fa-tripadvisor  black-text"></i></a>
+                    </h4>
+                    <p class="flow-text">
+                    {{ page.content }}
+                    </p>
+                </div>
+                <div class="col s12 m7 l7">
+                    <div class="slider">
+                        <ul class="slides">
+                            <li><img src="{{ page.cover-url}}"></li>
+                            {% if page.photo-1-url %}<li><img src="{{ page.photo-1-url}}"></li> {% endif %}
+                            {% if page.photo-2-url %}<li><img src="{{ page.photo-2-url}}"></li> {% endif %}
+                            {% if page.photo-3-url %}<li><img src="{{ page.photo-3-url}}"></li> {% endif %}
+                            {% if page.photo-4-url %}<li><img src="{{ page.photo-4-url}}"></li> {% endif %}
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="row">
-                {{page.location-map}}
+                <div class="col s12 m12 l12">
+                    <ul class="collapsible" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="fa fa-phone"></i> {{ page.place-phone }}
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="fa fa-map"></i> {{ page.location }}
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="fa fa-globe"></i>{{ page.city }} / {{ page.state}}
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="fa fa-envira"></i> Café {{ page.coffee }}
+                            </div>
+                            {% if page.coffee-special %}
+                            <div class="collapsible-body">
+                                <ul class="collection">
+                                    <li class="collection-item">Região: {{page.coffee-region}}</li>
+                                    <li class="collection-item">Fazenda: {{page.coffee-farm}}</li>
+                                    <li class="collection-item">Produtor: {{page.coffee-producer}}</li>
+                                    <li class="collection-item">Variedade: {{page.coffee-variety}}</li>
+                                    <li class="collection-item">Altitude: {{page.coffee-altitude}}</li>
+                                    <li class="collection-item">Notas: {{page.coffee-notes}}</li>
+                                    <li class="collection-item">Processo: {{page.coffee-process}}</li>
+                                </ul>
+                            </div>
+                            {% endif %}
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="fa fa-coffee"></i> {{ page.price }}
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m12 s12 center-align">
+                    {{page.location-map}}
+                </div>
             </div>
         </div>
     </div>
     <div class="parallax-container">
-        <div class="parallax"><img src="{{ page.photo-2-url }}"></div>
+        <div class="parallax"><img src="{{ page.photo-1-url }}"></img></div>
     </div>
 </article>
