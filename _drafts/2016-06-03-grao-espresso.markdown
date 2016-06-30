@@ -1,0 +1,38 @@
+---
+layout: post
+
+date: 2016-06-27 20:00:00 -0300
+title: Zuila Café
+
+place: Zuila Café
+place-insagram: https://www.instagram.com/zuilacafe/
+place-facebook: https://www.facebook.com/Zuila-Caf%C3%A9-409594285760813/
+place-email: 
+place-phone: (85) 3224 1202
+location: R. Silva Paulet, 1350.
+location-url: https://goo.gl/maps/wyQsTnBWYeH2
+location-map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.335754180647!2d-38.50855568577342!3d-3.736815644260444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c748f53251d22d%3A0x6141831fd85c693f!2sZuila+Caf%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1467121494885" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+location-lat: 
+location-long:
+city: Fortaleza
+state: Ceará
+
+coffee: 3 Corações
+coffee-region:
+coffee-farm:
+coffee-producer:
+coffee-variety:
+coffee-altitude:
+coffee-notes:
+coffee-process:
+
+rate: 2.5
+price: R$ 4,80
+
+cover-url: https://c2.staticflickr.com/8/7327/27667374900_cb33a3424a_n.jpg
+photo-1-url: https://c2.staticflickr.com/8/7329/27667368800_f6d1e0086a_h.jpg
+photo-2-url: https://c2.staticflickr.com/8/7316/27667372190_553cbf3d36_h.jpg
+photo-3-url: https://c2.staticflickr.com/8/7327/27667374900_89b82d10ba_h.jpg
+photo-4-url:
+---
+Zuila Café fica...

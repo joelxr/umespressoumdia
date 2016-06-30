@@ -4,10 +4,10 @@ layout: default
 <article class="black-text" itemscope itemtype="http://schema.org/BlogPosting">
     <div class="section">
         <div class="container">
-            <div class="row valign-wrapper">
+            <div class="row valign-wrapper center-align">
                 <div class="col s10 m10 l3">
                     <h2 class="header">{{ page.title }}</h2>
-                    <h3>
+                    <h4>
                         {% for i in (1..page.rate)  %}
                         <i class="fa fa-star"></i>
                         {% endfor %}
@@ -16,10 +16,10 @@ layout: default
                         {% if p != 0 %}
                         <i class="fa fa-star-half-o"></i>
                         {% endif %}
-                    </h3>
-                    <h4>
-                        <i class="fa fa-calendar"></i> {{ page.date | date: "%d/%m/%y" }}
                     </h4>
+                    <h5>
+                        <i class="fa fa-calendar"></i> {{ page.date | date: "%d/%m/%y" }}
+                    </h5>
                     <p class="flow-text">
                     {{ page.content }}
                     </p>
@@ -66,11 +66,11 @@ layout: default
                 </div>
                 <div class="col s2 m2 l1">
                     <ul>
-                        <li><h4><a href="mailto:{{ page.place-email }}"><i class="fa fa-email black-text"></i></a></h4></li>
-                        <li><h4><a href="{{ page.place-facebook }}"><i class="fa fa-facebook black-text"></i></a></h4></li>
-                        <li><h4><a href="{{ page.place-instagram }}"><i class="fa fa-instagram black-text"></i></a></h4></li>
-                        <li><h4><a href="{{ page.place-foursquare }}"><i class="fa fa-foursquare black-text"></i></a></h4></li>
-                        <li><h4><a href="{{ page.place-tripadvisor }}"><i class="fa fa-tripadvisor  black-text"></i></a></h4></li>
+                        <li><h5><a href="mailto:{{ page.place-email }}"><i class="fa fa-email black-text"></i></a></h5></li>
+                        <li><h5><a href="{{ page.place-facebook }}"><i class="fa fa-facebook black-text"></i></a></h5></li>
+                        <li><h5><a href="{{ page.place-instagram }}"><i class="fa fa-instagram black-text"></i></a></h5></li>
+                        <li><h5><a href="{{ page.place-foursquare }}"><i class="fa fa-foursquare black-text"></i></a></h5></li>
+                        <li><h5><a href="{{ page.place-tripadvisor }}"><i class="fa fa-tripadvisor  black-text"></i></a></h5></li>
                     </ul>
                 </div>
                 <div class="col s12 m12 l8">
