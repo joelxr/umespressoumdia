@@ -5,7 +5,7 @@ layout: default
     <div class="section">
         <div class="container">
             <div class="row valign-wrapper center-align">
-                <div class="col s10 m10 l3">
+                <div class="col s10 m10 l4">
                     <h2 class="header">{{ page.title }}</h2>
                     <h4>
                         {% for i in (1..page.rate)  %}
@@ -23,27 +23,35 @@ layout: default
                     <p class="flow-text">
                     {{ page.content }}
                     </p>
-                    <ul class="collapsible hoverable" data-collapsible="accordion">
+                    <ul class="collapsible hoverable left-align" data-collapsible="accordion">
+                        {% if page.place-phone %}
                         <li>
                             <div class="collapsible-header">
                                 <i class="fa fa-phone"></i> {{ page.place-phone }}
                             </div>
                         </li>
+                        {% endif %}
+
+                        {% if page.location %}
                         <li>
                             <div class="collapsible-header">
                                 <i class="fa fa-map"></i> {{ page.location }}
                             </div>
                         </li>
+                        {% endif %}
+
+                        {% if page.city %}
                         <li>
                             <div class="collapsible-header">
                                 <i class="fa fa-globe"></i>{{ page.city }} / {{ page.state}}
                             </div>
                         </li>
+                        {% endif %}
+
                         <li>
                             <div class="collapsible-header">
                                 <i class="fa fa-envira"></i> Café {{ page.coffee }}
                             </div>
-                            {% if page.coffee-special %}
                             <div class="collapsible-body">
                                 <ul class="collection">
                                     <li class="collection-item">Região: {{page.coffee-region}}</li>
@@ -55,8 +63,8 @@ layout: default
                                     <li class="collection-item">Processo: {{page.coffee-process}}</li>
                                 </ul>
                             </div>
-                            {% endif %}
                         </li>
+
                         <li>
                             <div class="collapsible-header">
                                 <i class="fa fa-coffee"></i> {{ page.price }}
@@ -66,14 +74,44 @@ layout: default
                 </div>
                 <div class="col s2 m2 l1">
                     <ul>
-                        <li><h5><a href="mailto:{{ page.place-email }}"><i class="fa fa-email black-text"></i></a></h5></li>
-                        <li><h5><a href="{{ page.place-facebook }}"><i class="fa fa-facebook black-text"></i></a></h5></li>
-                        <li><h5><a href="{{ page.place-instagram }}"><i class="fa fa-instagram black-text"></i></a></h5></li>
-                        <li><h5><a href="{{ page.place-foursquare }}"><i class="fa fa-foursquare black-text"></i></a></h5></li>
-                        <li><h5><a href="{{ page.place-tripadvisor }}"><i class="fa fa-tripadvisor  black-text"></i></a></h5></li>
+                        {% if page.place-email %}
+                        <li>
+                            <h5>
+                                <a href="mailto:{{ page.place-email }}"><i class="fa fa-email black-text"></i></a>
+                            </h5>
+                        </li>
+                        {% endif %}
+                        {% if page.place-facebook %}
+                        <li>
+                            <h5>
+                                <a href="{{ page.place-facebook }}"><i class="fa fa-facebook black-text"></i></a>
+                            </h5>
+                        </li>
+                        {% endif %}
+                        {% if page.place-instagram %}
+                        <li>
+                            <h5>
+                                <a href="{{ page.place-instagram }}"><i class="fa fa-instagram black-text"></i></a>
+                            </h5>
+                        </li>
+                        {% endif %}
+                        {% if page.place-foursquare %}
+                        <li>
+                            <h5>
+                                <a href="{{ page.place-foursquare }}"><i class="fa fa-foursquare black-text"></i></a>
+                            </h5>
+                        </li>
+                        {% endif %}
+                        {% if page.place-tripadvisor %}
+                        <li>
+                            <h5>
+                                <a href="{{ page.place-tripadvisor }}"><i class="fa fa-tripadvisor  black-text"></i></a>
+                            </h5>
+                        </li>
+                        {% endif %}
                     </ul>
                 </div>
-                <div class="col s12 m12 l8">
+                <div class="col s12 m12 l7">
                     <div class="slider">
                         <ul class="slides">
                             <li><img src="{{ page.cover-url}}"></li>
@@ -85,11 +123,13 @@ layout: default
                     </div>
                 </div>
             </div>
+            {% if page.location-map %}
             <div class="row">
                 <div class="col s12 m12 s12 center-align">
                     {{page.location-map}}
                 </div>
             </div>
+            {% endif %}
         </div>
     </div>
     <div class="parallax-container">

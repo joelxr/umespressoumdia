@@ -5,7 +5,7 @@ date: 2016-06-27 20:00:00 -0300
 title: Zuila Café
 
 place: Zuila Café
-place-insagram: https://www.instagram.com/zuilacafe/
+place-instagram: https://www.instagram.com/zuilacafe/
 place-facebook: https://www.facebook.com/Zuila-Caf%C3%A9-409594285760813/
 place-email: 
 place-tripadvisor: https://www.tripadvisor.com.br/Restaurant_Review-g303293-d4481276-Reviews-Zuila_Cafe-Fortaleza_State_of_Ceara.html
