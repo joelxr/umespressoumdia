@@ -32,6 +32,18 @@ module.exports = function(grunt){
                 dest: 'assets/font/roboto/',
                 filter: 'isFile'
             },
+            {
+                src: 'assets/vendor/mapbox.js/mapbox.css',
+                dest: 'assets/css/mapbox.css',
+                filter: 'isFile'
+            },
+            {
+                expand: true,
+                cwd: 'assets/vendor/mapbox.js/images/',
+                src: '**',
+                dest: 'assets/images/',
+                filter: 'isFile'
+            }
             ]
         },
         dev: {
@@ -64,6 +76,18 @@ module.exports = function(grunt){
                 dest: '_site/assets/font/roboto/',
                 filter: 'isFile'
             },
+            {
+                src: 'assets/vendor/mapbox.js/mapbox.css',
+                dest: '_site/assets/css/mapbox.css',
+                filter: 'isFile'
+            },
+            {
+                expand: true,
+                cwd: 'assets/vendor/mapbox.js/images/',
+                src: '**',
+                dest: '_site/assets/images/',
+                filter: 'isFile'
+            }
             ]
         }
     });

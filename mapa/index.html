@@ -3,5 +3,41 @@ layout: default
 ---
 
 <article>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
 
+                <div style="position:absolute; top:0; bottom:0; width:100%;" id='map'></div>
+                <script>
+L.mapbox.accessToken = 'pk.eyJ1Ijoiam9lbHhyIiwiYSI6ImNpcTI3b3l5MzAxM3ZmaW5uMDBnMjYxd2IifQ.8HAKtUOggFVWSy1OlDvx2Q';
+var map = L.mapbox.map('map', 'mapbox.streets')
+.setView([38.91338, -77.03236], 16);
+
+L.mapbox.featureLayer({
+    // this feature is in the GeoJSON format: see geojson.org
+    // for the full specification
+    type: 'Feature',
+    geometry: {
+        type: 'Point',
+        // coordinates here are in longitude, latitude order because
+        // x, y is the standard for GeoJSON and many formats
+        coordinates: [
+            -77.03221142292,
+            38.913371603574 
+        ]
+    },
+    properties: {
+        title: 'Peregrine Espresso',
+        description: '1718 14th St NW, Washington, DC',
+        // one can customize markers by adding simplestyle properties
+        // https://www.mapbox.com/guides/an-open-platform/#simplestyle
+        'marker-size': 'large',
+        'marker-color': '#BE9A6B',
+        'marker-symbol': 'cafe'
+    }
+}).addTo(map);
+                </script>
+            </div>
+        </div>
+    </div>
 </article>
