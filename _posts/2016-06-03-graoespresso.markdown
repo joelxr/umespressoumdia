@@ -8,7 +8,7 @@ place-instagram: https://www.instagram.com/graoespressoiguatemifortal/
 place-facebook: https://www.facebook.com/graoespressoiguatemifortaleza/
 place-email:
 place-tripadvisor:
-place-foursqaure: https://pt.foursquare.com/v/gr%C3%A3o-espresso/54d6903a498eab48114427b2
+place-foursquare: https://pt.foursquare.com/v/gr%C3%A3o-espresso/54d6903a498eab48114427b2
 place-phone: (85) 98974.7372
 place-site: http://www.graoespresso.com.br/
 location: Av. Washington Soares, 85 - Loja 714. Shopping Iguatemi
