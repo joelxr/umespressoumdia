@@ -31,7 +31,7 @@ coffee-notes: Chocolate, caramelo.
 coffee-process: Natural
 
 rate: 5
-price: 4.50
+price: R$ 4,50
 
 cover-url: https://c2.staticflickr.com/8/7342/28033481091_1f18e71438_o.jpg
 photo-1-url: https://c2.staticflickr.com/8/7317/28110878545_6c7765118e_o.jpg
