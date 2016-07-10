@@ -1,0 +1,41 @@
+---
+layout: post
+
+date: 2016-06-04 20:00:00 -0300
+title: Amika Coffeehouse
+place: Amika Coffeehouse
+place-instagram: https://www.instagram.com/amikacoffee/
+place-facebook: https://www.facebook.com/amikacoffeehouse
+place-twitter: https://twitter.com/AmikaCoffee
+place-email:
+place-tripadvisor: https://www.tripadvisor.com.br/Restaurant_Review-g303293-d4480738-Reviews-Amika_Coffeehouse-Fortaleza_State_of_Ceara.html
+place-foursquare: https://pt.foursquare.com/v/amika-coffeehouse/50f8616c7043cf0694754d0e
+place-phone: (85) 3031.0351
+place-site: http://www.amikacoffeehouse.com.br/
+location: R. Ana Bilhar, 1136.
+location-url: https://goo.gl/maps/2BTdhLPC5dq
+location-map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2367.331102745196!2d-38.49125078844758!3d-3.731364397136369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c748795faea49f%3A0xaa84e458361a8c15!2sAmika!5e0!3m2!1spt-BR!2sbr!4v1468159270137" width="100%" height="450" frameborder="0" style="border:0" scrolling="no"></iframe>
+location-lat: -3.730880
+location-long:-38.490126
+city: Fortaleza
+state: Ceará
+
+coffee: Sombreado
+coffee-special: Sim
+coffee-region: Paracatu, MG.
+coffee-farm: Paraíso da Nascente
+coffee-producer: Evanildo Peres
+coffee-variety: Catuaí Vermelho
+coffee-altitude:
+coffee-notes: Chocolate, caramelo.
+coffee-process: Natural
+
+rate: 5
+price: 4.50
+
+cover-url: https://c2.staticflickr.com/8/7342/28033481091_1f18e71438_o.jpg
+photo-1-url: https://c2.staticflickr.com/8/7317/28110878545_6c7765118e_o.jpg
+photo-2-url: https://c2.staticflickr.com/8/7656/27496478844_731aa77f92_o.jpg
+photo-3-url: https://c2.staticflickr.com/8/7398/28077128706_1c34d1a745_o.jpg
+photo-4-url:
+---
