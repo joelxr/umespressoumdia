@@ -10,7 +10,7 @@ place-twitter: https://twitter.com/AmikaCoffee
 place-email:
 place-tripadvisor: https://www.tripadvisor.com.br/Restaurant_Review-g303293-d4480738-Reviews-Amika_Coffeehouse-Fortaleza_State_of_Ceara.html
 place-foursquare: https://pt.foursquare.com/v/amika-coffeehouse/50f8616c7043cf0694754d0e
-place-phone: (85) 3031.0351
+place-phone: (85) 3031 0351
 place-site: http://www.amikacoffeehouse.com.br/
 location: R. Ana Bilhar, 1136.
 location-url: https://goo.gl/maps/2BTdhLPC5dq
@@ -34,8 +34,7 @@ rate: 5
 price: R$ 4,50
 
 cover-url: https://c2.staticflickr.com/8/7342/28033481091_1f18e71438_o.jpg
-photo-1-url: https://c2.staticflickr.com/8/7317/28110878545_6c7765118e_o.jpg
-photo-2-url: https://c2.staticflickr.com/8/7656/27496478844_731aa77f92_o.jpg
-photo-3-url: https://c2.staticflickr.com/8/7398/28077128706_1c34d1a745_o.jpg
-photo-4-url:
+footer-url: https://c2.staticflickr.com/8/7317/28110878545_6c7765118e_o.jpg
+photo-1-url: https://c2.staticflickr.com/8/7656/27496478844_731aa77f92_o.jpg
+photo-2-url: https://c2.staticflickr.com/8/7398/28077128706_1c34d1a745_o.jpg
 ---

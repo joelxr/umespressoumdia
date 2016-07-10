@@ -33,8 +33,8 @@ rate: 2.5
 price: R$ 4,80
 
 cover-url: https://c2.staticflickr.com/8/7327/27667374900_cb33a3424a_n.jpg
-photo-1-url: https://c2.staticflickr.com/8/7329/27667368800_f6d1e0086a_h.jpg
-photo-2-url: https://c2.staticflickr.com/8/7316/27667372190_553cbf3d36_h.jpg
-photo-3-url: https://c2.staticflickr.com/8/7327/27667374900_89b82d10ba_h.jpg
-photo-4-url:
+footer-url: https://c2.staticflickr.com/8/7329/27667368800_f6d1e0086a_h.jpg
+photo-1-url: https://c2.staticflickr.com/8/7316/27667372190_553cbf3d36_h.jpg
+photo-2-url: https://c2.staticflickr.com/8/7327/27667374900_89b82d10ba_h.jpg
+photo-3-url:
 ---

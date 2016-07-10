@@ -9,7 +9,7 @@ place-facebook: https://www.facebook.com/graoespressoiguatemifortaleza/
 place-email:
 place-tripadvisor:
 place-foursquare: https://pt.foursquare.com/v/gr%C3%A3o-espresso/54d6903a498eab48114427b2
-place-phone: (85) 98974.7372
+place-phone: (85) 98974 7372
 place-site: http://www.graoespresso.com.br/
 location: Av. Washington Soares, 85 - Loja 714. Shopping Iguatemi
 location-url: https://goo.gl/maps/qNeRtuSbxZL2
@@ -33,8 +33,8 @@ rate: 3
 price: R$ 4,90
 
 cover-url: https://c2.staticflickr.com/8/7341/27972985836_ccf0d21707_o.jpg
-photo-1-url: https://c2.staticflickr.com/8/7179/27393693853_6b1e4b5938_o.jpg
-photo-2-url: https://c2.staticflickr.com/8/7378/27972991406_da82486be7_o.jpg
-photo-3-url: https://c2.staticflickr.com/8/7295/28216049545_79036cbe9f_o.jpg
-photo-4-url:
+footer-url: https://c2.staticflickr.com/8/7179/27393693853_6b1e4b5938_o.jpg
+photo-1-url: https://c2.staticflickr.com/8/7378/27972991406_da82486be7_o.jpg
+photo-2-url: https://c2.staticflickr.com/8/7295/28216049545_79036cbe9f_o.jpg
+photo-3-url:
 ---

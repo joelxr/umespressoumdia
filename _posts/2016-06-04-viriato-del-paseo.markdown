@@ -10,7 +10,7 @@ place-twitter:
 place-email: reservas@alice.com.br
 place-tripadvisor: https://www.tripadvisor.com.br/Restaurant_Review-g303293-d10453348-Reviews-Cafe_Viriato-Fortaleza_State_of_Ceara.html
 place-foursquare: https://pt.foursquare.com/v/caf%C3%A9-viriato/56fe96e4498e4059d8d3840c
-place-phone: (85) 3182.8200
+place-phone: (85) 3182 8200
 place-site: http://alice.com.br/
 location: Av Santos Dumont, 3131 (Shopping Del Paseo).
 location-url: https://goo.gl/maps/wMp1zTcncVu
@@ -34,8 +34,8 @@ rate: 4.5
 price: R$ 4,50
 
 cover-url: https://c2.staticflickr.com/8/7394/28033479991_37ffabc528_o.jpg
-photo-1-url: https://c2.staticflickr.com/8/7325/28077141026_f5e5f165a1_o.jpg
-photo-2-url: https://c2.staticflickr.com/8/7330/27496488204_9cd3762429_o.jpg
-photo-3-url: https://c2.staticflickr.com/8/7436/27496486164_b61905dd59_o.jpg
-photo-4-url:
+footer-url: https://c2.staticflickr.com/8/7325/28077141026_f5e5f165a1_o.jpg
+photo-1-url: https://c2.staticflickr.com/8/7330/27496488204_9cd3762429_o.jpg
+photo-2-url: https://c2.staticflickr.com/8/7436/27496486164_b61905dd59_o.jpg
+photo-3-url:
 ---
