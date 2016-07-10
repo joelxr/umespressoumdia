@@ -5,20 +5,9 @@
     <description></description>
     <link>www.umespressoumdia.cf/umespressoumdia/</link>
     <atom:link href="www.umespressoumdia.cf/umespressoumdia/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 10 Jul 2016 14:18:48 +0000</pubDate>
-    <lastBuildDate>Sun, 10 Jul 2016 14:18:48 +0000</lastBuildDate>
+    <pubDate>Sun, 10 Jul 2016 14:27:15 +0000</pubDate>
+    <lastBuildDate>Sun, 10 Jul 2016 14:27:15 +0000</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
-    
-      <item>
-        <title></title>
-        <description>
-</description>
-        <pubDate>Sun, 10 Jul 2016 14:18:48 +0000</pubDate>
-        <link>www.umespressoumdia.cf/umespressoumdia/posts/2016-06-04-amika/</link>
-        <guid isPermaLink="true">www.umespressoumdia.cf/umespressoumdia/posts/2016-06-04-amika/</guid>
-        
-        
-      </item>
     
       <item>
         <title>Zuila Café</title>
@@ -27,6 +16,17 @@
         <pubDate>Mon, 27 Jun 2016 23:00:00 +0000</pubDate>
         <link>www.umespressoumdia.cf/umespressoumdia/posts/zuila/</link>
         <guid isPermaLink="true">www.umespressoumdia.cf/umespressoumdia/posts/zuila/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Amika Coffeehouse</title>
+        <description>
+</description>
+        <pubDate>Sat, 04 Jun 2016 23:00:00 +0000</pubDate>
+        <link>www.umespressoumdia.cf/umespressoumdia/posts/amika/</link>
+        <guid isPermaLink="true">www.umespressoumdia.cf/umespressoumdia/posts/amika/</guid>
         
         
       </item>
