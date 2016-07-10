@@ -31,7 +31,7 @@ photo-3-url       : https://c2.staticflickr.com/8/7635/27846688770_69ae7e204a_o.
 photo-4-url       : 
 location          : Av. Antônio Sales, 1357.
 city              : Fortaleza
-state             : Ceará
+state             : CE
 location-url      : https://goo.gl/maps/9kGDDeG1uWR2
 location-lat      : -3.742394
 location-long     : -38.511909

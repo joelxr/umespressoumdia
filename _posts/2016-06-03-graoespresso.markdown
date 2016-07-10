@@ -17,7 +17,7 @@ location-map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1
 location-lat: -3.755408
 location-long: -38.489494
 city: Fortaleza
-state: Ceará
+state: CE
 
 coffee: 3 Corações
 coffee-special:

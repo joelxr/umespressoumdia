@@ -19,7 +19,7 @@ location-map      :  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m1
 location-lat      : -3.735340
 location-long     : -38.491777
 city              : Fortaleza
-state             : Ceará
+state             : CE
 
 coffee: Kaphé Especial
 coffee-special: 

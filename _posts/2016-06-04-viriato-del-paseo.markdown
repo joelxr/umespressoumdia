@@ -19,7 +19,7 @@ location-map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1
 location-lat: -3.736244
 location-long: -38.496763
 city: Fortaleza
-state: Ceará
+state: CE
 
 coffee: Barista
 coffee-special: 

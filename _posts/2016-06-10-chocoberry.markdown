@@ -31,7 +31,7 @@ photo-3-url       :
 photo-4-url       : 
 location          : R. Ana Bilhar, 1125.
 city              : Fortaleza
-state             : Ceará
+state             : CE
 location-url      : https://goo.gl/maps/UgcAKjYbVPm
 location-lat      : -3.731146
 location-long     : -38.490118

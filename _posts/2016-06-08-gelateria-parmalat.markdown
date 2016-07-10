@@ -19,7 +19,7 @@ location-map      :  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m1
 location-lat      : -3.731267
 location-long     : -38.490164
 city              : Fortaleza
-state             : Ceará
+state             : CE
 
 coffee: Arte
 coffee-special: 

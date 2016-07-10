@@ -7,6 +7,7 @@ layout: default
             <div class="row valign-wrapper center-align">
                 <div class="col s10 m10 l4">
                     <h2 class="header">{{ page.title }}</h2>
+                    <h4>
                     {% if page.rate == 0.5 %}
                         {% include 0.5-stars.html %}
                     {% elsif page.rate == 1 %}
@@ -28,6 +29,7 @@ layout: default
                     {% elsif page.rate == 5 %}
                         {% include 5.0-stars.html %}
                     {% endif %}
+                    </h4>
                     <h5><i class="fa fa-calendar"></i> {{ page.date | date: "%d/%m/%y" }}</h5>
                     <p class="flow-text">
                     {{ page.content }}
