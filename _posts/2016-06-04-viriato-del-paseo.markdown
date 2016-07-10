@@ -2,6 +2,7 @@
 layout: post
 
 date: 2016-06-04 20:00:00 -0300
+sequence: 3
 title: Café Viriato (Del Paseo)
 place: Café Viriato (Del Paseo)
 place-instagram: https://www.instagram.com/cafeviriato

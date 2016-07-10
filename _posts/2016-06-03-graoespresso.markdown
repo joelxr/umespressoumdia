@@ -1,7 +1,7 @@
 ---
 layout: post
-
 date: 2016-06-03 20:00:00 -0300
+sequence: 1
 title: Grão Espresso
 place: Grão Espresso
 place-instagram: https://www.instagram.com/graoespressoiguatemifortal/

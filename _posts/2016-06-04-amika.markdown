@@ -2,6 +2,7 @@
 layout: post
 
 date: 2016-06-04 20:00:00 -0300
+sequence: 2
 title: Amika Coffeehouse
 place: Amika Coffeehouse
 place-instagram: https://www.instagram.com/amikacoffee/

@@ -2,6 +2,7 @@
 layout: post
 
 date              : 2016-06-06 20:00:00 -0300
+sequence          : 4
 title             : Le Pain Le Café
 place             : Le Pain Le Café
 place-instagram   : https://www.instagram.com/lepainlecafe
@@ -38,5 +39,5 @@ footer-url  :  https://c2.staticflickr.com/8/7347/28077138776_76c94c799d_o.jpg
 photo-1-url :  https://c2.staticflickr.com/8/7415/27496499434_1451178873_o.jpg
 photo-2-url :  https://c2.staticflickr.com/8/7335/28077136786_77c64691d7_o.jpg
 photo-3-url :  https://c2.staticflickr.com/8/7686/27496493704_da5552c3f0_o.jpg
-photo-4-url :   https://c2.staticflickr.com/8/7479/28077133106_b06a060270_o.jpg
+photo-4-url :  https://c2.staticflickr.com/8/7479/28077133106_b06a060270_o.jpg
 ---

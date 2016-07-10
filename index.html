@@ -10,13 +10,15 @@ layout: default
                     <img class="activator" src="{{ post.cover-url }}">
                 </div>
                 <div class="card-content waves-effect waves-block waves-light">
-                     <spam class="post-link activator">{{ post.title }}</spam>
+                    <spam class="post-link activator">{{ post.title }}<spam class="chip brown darken-2 white-text right bold">{{ post.sequence }}</spam></spam>
                      <p class="activator">{{post.city}}/{{post.state}}</p>
                 </div>
-                <div class="card-action right-align">
-                    <a href="{{ post.url | prepend: site.baseurl }}" class="more-link right-align">
+                <div class="card-action">
+                    <div class="right-align">
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="more-link">
                         Detalhes <i class="fa fa-long-arrow-right"></i>
                     </a>
+                    </div>
                 </div>
                 <div class="card-reveal">
                     <span class="card-title">{{ post.title }}<i class="right fa fa-times"></i></span>
