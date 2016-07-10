@@ -37,8 +37,3 @@ location-lat      : -3.735508
 location-long     : -38.487396
 location-map      : <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.3415169550567!2d-38.48956278573137!3d-3.735545644253717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7487decaed479%3A0xd6aa338eefd3cbb4!2sMONTMARTTRE!5e0!3m2!1spt-BR!2sbr!4v1468175033365" width="100%" height="450" frameborder="0" style="border:0" scrolling="no"></iframe>
 ---
-
-
-	1 https://c2.staticflickr.com/8/7470/27512619294_8316d1a019_o.jpg
-	2 https://c2.staticflickr.com/8/7687/27512233553_01a3baedbe_o.jpg
-    3 https://c2.staticflickr.com/8/7635/27512618104_7aecd9e008_o.jpg
