@@ -7,10 +7,28 @@ layout: default
             <div class="row valign-wrapper center-align">
                 <div class="col s10 m10 l4">
                     <h2 class="header">{{ page.title }}</h2>
-                    <h4>{% assign n = (page.rate | floor) %}{% assign p = (page.rate | minus:n) %}{% for i in (1..page.rate) %}<i class="fa fa-star"></i>{% endfor %}{% if p != 0 %}<i class="fa fa-star-half-o"></i>{% endif %}</h4>
-                    <h5>
-                        <i class="fa fa-calendar"></i> {{ page.date | date: "%d/%m/%y" }}
-                    </h5>
+                    {% if page.rate == 0.5 %}
+                        {% include 0.5-stars.html %}
+                    {% elsif page.rate == 1 %}
+                        {% include 1.0-stars.html %}
+                    {% elsif page.rate == 1.5 %}
+                        {% include 1.5-stars.html %}
+                    {% elsif page.rate == 2 %}
+                        {% include 2.0-stars.html %}
+                    {% elsif page.rate == 2.5 %}
+                        {% include 2.5-stars.html %}
+                    {% elsif page.rate == 3 %}
+                        {% include 3.0-stars.html %}
+                    {% elsif page.rate == 3.5 %}
+                        {% include 3.5-stars.html %}
+                    {% elsif page.rate == 4 %}
+                        {% include 4.0-stars.html %}
+                    {% elsif page.rate == 4.5 %}
+                        {% include 4.5-stars.html %}
+                    {% elsif page.rate == 5 %}
+                        {% include 5.0-stars.html %}
+                    {% endif %}
+                    <h5><i class="fa fa-calendar"></i> {{ page.date | date: "%d/%m/%y" }}</h5>
                     <p class="flow-text">
                     {{ page.content }}
                     </p>
