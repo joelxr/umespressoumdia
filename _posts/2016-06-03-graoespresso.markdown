@@ -35,6 +35,6 @@ price: R$ 4,90
 cover-url: https://c2.staticflickr.com/8/7341/27972985836_ccf0d21707_o.jpg
 photo-1-url: https://c2.staticflickr.com/8/7179/27393693853_6b1e4b5938_o.jpg
 photo-2-url: https://c2.staticflickr.com/8/7378/27972991406_da82486be7_o.jpg
-photo-3-url:
+photo-3-url: https://c2.staticflickr.com/8/7295/28216049545_79036cbe9f_o.jpg
 photo-4-url:
 ---
