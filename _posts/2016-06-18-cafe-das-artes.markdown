@@ -23,7 +23,7 @@ coffee-notes      :
 coffee-process    : 
 rate              : 4.5
 price             : R$ 5,00
-cover-url         : https://c1.staticflickr.com/9/8804/27941747650_366b5e3a8e_o.jpg
+cover-url         : https://c2.staticflickr.com/9/8804/27941747650_366b5e3a8e_o.jpg
 footer-url        : https://c2.staticflickr.com/8/7386/27520408203_1b08879f15_o.jpg
 photo-1-url       : https://c2.staticflickr.com/8/7396/27854952220_c17d3e0fbf_o.jpg
 photo-2-url       : https://c2.staticflickr.com/8/7524/28101453426_e0426f932d_o.jpg
