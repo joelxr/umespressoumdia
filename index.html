@@ -9,26 +9,41 @@ layout: default
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="{{ post.cover-url }}">
                 </div>
-                <div class="card-content waves-effect waves-block waves-light">
-                     <spam class="post-link activator">{{ post.title }}</spam>
-                     <p class="activator">{{post.city}}/{{post.state}}</p>
-                </div>
-                <div class="card-action right-align">
-                    <a href="{{ post.url | prepend: site.baseurl }}" class="more-link right-align">
-                        Detalhes <i class="fa fa-long-arrow-right"></i>
-                    </a>
+
+                <div class="card-content">
+                    <spam class="post-link">
+                        <spam class="activator">{{ post.title }}</spam>
+                        <spam class="right">
+                            <a class="btn-floating btn-small waves-effect waves-light brown" href="{{ post.url | prepend: site.baseurl }}">
+                                <i class="fa fa-info"></i>
+                            </a>
+                        </spam>
+                    </spam>
                 </div>
                 <div class="card-reveal">
-                    <span class="card-title">{{ post.title }}<i class="right fa fa-times"></i></span>
+                    <span class="card-title">#{{ post.sequence }} {{ post.title }}<i class="right fa fa-times"></i></span>
                     <ul style="margin-left: 2px;">
                         <li>
-                            {% for i in (1..post.rate)  %}
-                            <i class="fa fa-star"></i>
-                            {% endfor %}
-                            {% assign n = (post.rate | floor) %}
-                            {% assign p = (post.rate | minus:n) %}
-                            {% if p != 0 %}
-                            <i class="fa fa-star-half-o"></i>
+                            {% if post.rate == 0.5 %}
+                            {% include 0.5-stars.html %}
+                            {% elsif post.rate == 1 %}
+                            {% include 1.0-stars.html %}
+                            {% elsif post.rate == 1.5 %}
+                            {% include 1.5-stars.html %}
+                            {% elsif post.rate == 2 %}
+                            {% include 2.0-stars.html %}
+                            {% elsif post.rate == 2.5 %}
+                            {% include 2.5-stars.html %}
+                            {% elsif post.rate == 3 %}
+                            {% include 3.0-stars.html %}
+                            {% elsif post.rate == 3.5 %}
+                            {% include 3.5-stars.html %}
+                            {% elsif post.rate == 4 %}
+                            {% include 4.0-stars.html %}
+                            {% elsif post.rate == 4.5 %}
+                            {% include 4.5-stars.html %}
+                            {% elsif post.rate == 5 %}
+                            {% include 5.0-stars.html %}
                             {% endif %}
                         </li>
                         <li>
@@ -43,7 +58,6 @@ layout: default
                         <li>
                             <i class="fa fa-credit-card"></i> {{ post.price }}
                         </li>
-
                     </ul>
                 </div>
             </div>

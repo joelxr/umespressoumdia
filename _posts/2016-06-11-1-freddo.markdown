@@ -1,0 +1,39 @@
+---
+layout            : post
+date              : 2016-06-11 17:00:00
+sequence          : 10
+title             : Freddo (RioMar)
+place             : Freddo
+place-instagram   : https://www.instagram.com/freddobrasil
+place-facebook    : https://www.facebook.com/FreddoSorvetes/
+place-twitter     : https://twitter.com/FreddoBrasil
+place-email       : 
+place-tripadvisor : 
+place-foursquare  : https://pt.foursquare.com/v/freddo/54b59380498ef234bbabcb93
+place-phone       : (85) 3265 5795
+place-site        : http://freddobrasil.com/
+coffee            : Lavazza
+coffee-special    : 
+coffee-region     : 
+coffee-farm       : 
+coffee-producer   : 
+coffee-variety    : 
+coffee-altitude   : 
+coffee-notes      : 
+coffee-process    : 
+rate              : 2
+price             : R$ 5,50
+cover-url         : https://c2.staticflickr.com/8/7462/27512018083_d5943fc60f_o.jpg
+footer-url        : https://c2.staticflickr.com/8/7458/27512017583_fbbb7abdb2_o.jpg
+photo-1-url       : https://c2.staticflickr.com/8/7454/28092963076_5ca6e9c20c_o.jpg
+photo-2-url       : https://c2.staticflickr.com/8/7305/27512016663_d403924286_o.jpg
+photo-3-url       : 
+photo-4-url       : 
+location          : R. Des. Lauro Nogueira, 1500 (Shopping RioMar).
+city              : Fortaleza
+state             : CE
+location-url      : https://goo.gl/maps/En78TCsAVkq
+location-lat      : -3.741765
+location-long     : -38.471887
+location-map      : <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.3130116352927!2d-38.47407548573121!3d-3.741823444287512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74631f2768a13%3A0xcfe3f384b9308e03!2sRioMar+Fortaleza!5e0!3m2!1spt-BR!2sbr!4v1468169566167" width="100%" height="450" frameborder="0" style="border:0" scrolling="no"></iframe>
+---

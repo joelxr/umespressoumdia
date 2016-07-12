@@ -1,0 +1,41 @@
+---
+layout            : post
+date              : 2016-06-17 17:00:00
+sequence          : 15
+title             : McCafé (Iguatemi)
+place             : McCafé (Iguatemi)
+place-instagram   : 
+place-facebook    : 
+place-twitter     : 
+place-email       : 
+place-tripadvisor : 
+place-foursquare  : https://pt.foursquare.com/v/mccaf%C3%A9/4d63c88b03e2721e95c6112f
+place-phone       : (85) 9 8623 2001
+place-site        : https://www.mcdonalds.pt/ementa/categorias/mccafe/
+coffee            : Barista Prime
+coffee-special    : 
+coffee-region     : 
+coffee-farm       : 
+coffee-producer   : 
+coffee-variety    : 
+coffee-altitude   : 
+coffee-notes      : 
+coffee-process    : 
+rate              : 3.5
+price             : R$ 3,50
+cover-url         : https://c2.staticflickr.com/8/7329/28049476601_b4376ef0fc_o.jpg
+footer-url        : https://c2.staticflickr.com/8/7408/27512623334_0930ba5460_o.jpg
+photo-1-url       : https://c2.staticflickr.com/8/7417/28049475211_7167608e48_o.jpg
+photo-2-url       : https://c2.staticflickr.com/8/7628/27512621574_c4aa878550_o.jpg
+photo-3-url       : 
+photo-4-url       : 
+photo-5-url       : 
+photo-6-url       : 
+location          : Avenida Washington Soares, 85.
+city              : Fortaleza
+state             : CE
+location-url      : https://goo.gl/maps/aJofGsNovkB2
+location-lat      : -3.755408
+location-long     : 38.489494
+location-map      : <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.2438536756!2d-38.490010485731034!3d-3.757010744369502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74582286dd3f1%3A0xde4a1b04f806edb5!2sShopping+Iguatemi!5e0!3m2!1spt-BR!2sbr!4v1468175717525" width="100%" height="450" frameborder="0" style="border:0" scrolling="no"></iframe>
+---

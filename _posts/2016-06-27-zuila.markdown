@@ -2,10 +2,11 @@
 layout: post
 
 date: 2016-06-27 20:00:00 -0300
+sequence: 25
 title: Zuila Café
 
 place: Zuila Café
-place-insagram: https://www.instagram.com/zuilacafe/
+place-instagram: https://www.instagram.com/zuilacafe/
 place-facebook: https://www.facebook.com/Zuila-Caf%C3%A9-409594285760813/
 place-email: 
 place-tripadvisor: https://www.tripadvisor.com.br/Restaurant_Review-g303293-d4481276-Reviews-Zuila_Cafe-Fortaleza_State_of_Ceara.html
@@ -17,7 +18,7 @@ location-map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1
 location-lat: -3.736842
 location-long: -38.506421
 city: Fortaleza
-state: Ceará
+state: CE
 
 coffee: 3 Corações
 coffee-special:
@@ -33,8 +34,8 @@ rate: 2.5
 price: R$ 4,80
 
 cover-url: https://c2.staticflickr.com/8/7327/27667374900_cb33a3424a_n.jpg
-photo-1-url: https://c2.staticflickr.com/8/7329/27667368800_f6d1e0086a_h.jpg
-photo-2-url: https://c2.staticflickr.com/8/7316/27667372190_553cbf3d36_h.jpg
-photo-3-url: https://c2.staticflickr.com/8/7327/27667374900_89b82d10ba_h.jpg
-photo-4-url:
+footer-url: https://c2.staticflickr.com/8/7329/27667368800_f6d1e0086a_h.jpg
+photo-1-url: https://c2.staticflickr.com/8/7316/27667372190_553cbf3d36_h.jpg
+photo-2-url: https://c2.staticflickr.com/8/7327/27667374900_89b82d10ba_h.jpg
+photo-3-url:
 ---

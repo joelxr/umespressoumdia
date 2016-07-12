@@ -1,0 +1,41 @@
+---
+layout            : post
+date              : 2016-06-25 21:15:00
+sequence          : 23
+title             : Sodiê Doces
+place             : Sodiê Doces
+place-instagram   : https://www.instagram.com/SodieDoces/
+place-facebook    : https://www.facebook.com/sodiedocesmeireles/?fref=ts
+place-twitter     : https://twitter.com/SodieDoces
+place-email       : 
+place-tripadvisor : 
+place-foursquare  : https://pt.foursquare.com/v/sodi%C3%AA-doces/561fd71b498efe46cb8ac309
+place-phone       : (85) 3044 3004
+place-site        : http://sodiedoces.com.br/
+coffee            : Melitta Espresso
+coffee-special    : 
+coffee-region     : 
+coffee-farm       : 
+coffee-producer   : 
+coffee-variety    : 
+coffee-altitude   : 
+coffee-notes      : 
+coffee-process    : 
+rate              : 4
+price             : R$ 4,80
+cover-url         : https://c1.staticflickr.com/9/8821/28191196276_1193c7b07e_o.jpg
+footer-url        : https://c1.staticflickr.com/9/8562/28191190786_e05e515150_o.jpg
+photo-1-url       : https://c1.staticflickr.com/9/8569/28191193626_270b2399bc_o.jpg
+photo-2-url       : 
+photo-3-url       : 
+photo-4-url       : 
+photo-5-url       : 
+photo-6-url       : 
+location          : Av. Barão de Studart, 272.
+city              : Fortaleza
+state             : CE
+location-url      : https://goo.gl/maps/i4QF514ASgL2
+location-lat      : -3.726206
+location-long     : -38.504106
+location-map      : <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.3836164597747!2d-38.50629438573131!3d-3.726254644203826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c748685cdc1e3b%3A0x6ee4458fe048c99f!2sSodie+Doces!5e0!3m2!1spt-BR!2sbr!4v1468184112646" width="100%" height="450" frameborder="0" style="border:0" scrolling="no"></iframe>
+---

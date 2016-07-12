@@ -1,0 +1,43 @@
+---
+layout: post
+
+date              : 2016-06-07 20:00:00 -0300
+sequence          : 5
+title             : Rosita Café
+place             : Rosita Café
+place-instagram   : https://www.instagram.com/rositacafefortaleza
+place-facebook    : https://www.facebook.com/rositacafefortaleza/?fref=ts
+place-twitter     : 
+place-email       : 
+place-tripadvisor : 
+place-foursquare  : https://pt.foursquare.com/v/rosita-caf%C3%A9/5735295c498e6df84a3eaf00
+place-phone       : (85) 9 9619 0994
+place-site        : 
+location          : Rua Frederico Borges, 27.
+location-url      : https://goo.gl/maps/UcoNUHQVNV42
+location-map      :  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.367413455305!2d-38.49137598573129!3d-3.7298332442230246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7487999729e01%3A0x4baed042a917699d!2sRosita+Caf%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1468162394668" width="100%" height="450" frameborder="0" style="border:0" scrolling="no"></iframe>
+location-lat      : -3.729892
+location-long     : -38.489177
+city              : Fortaleza
+state             : CE
+
+coffee: Barista Prime
+coffee-special: 
+coffee-region: 
+coffee-farm: 
+coffee-producer: 
+coffee-variety: 
+coffee-altitude:
+coffee-notes: 
+coffee-process: 
+
+rate        :  3
+price       :  R$ 5,00
+
+cover-url   : https://c2.staticflickr.com/8/7435/28033545431_738fcb4cdc_o.jpg
+footer-url  : https://c2.staticflickr.com/8/7403/27496569414_bff3a85084_o.jpg
+photo-1-url : https://c2.staticflickr.com/8/7342/27496234823_1bdc57261d_o.jpg
+photo-2-url : https://c2.staticflickr.com/8/7347/27496238523_699acf52d7_o.jpg
+photo-3-url : 
+photo-4-url : 
+---

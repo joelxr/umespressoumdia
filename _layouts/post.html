@@ -4,46 +4,65 @@ layout: default
 <article class="black-text" itemscope itemtype="http://schema.org/BlogPosting">
     <div class="section">
         <div class="container">
-            <div class="row valign-wrapper">
-                <div class="col s10 m10 l3">
+            <div class="row valign-wrapper center-align">
+                <div class="col s10 m10 l4">
                     <h2 class="header">{{ page.title }}</h2>
-                    <h3>
-                        {% for i in (1..page.rate)  %}
-                        <i class="fa fa-star"></i>
-                        {% endfor %}
-                        {% assign n = (page.rate | floor) %}
-                        {% assign p = (page.rate | minus:n) %}
-                        {% if p != 0 %}
-                        <i class="fa fa-star-half-o"></i>
-                        {% endif %}
-                    </h3>
                     <h4>
-                        <i class="fa fa-calendar"></i> {{ page.date | date: "%d/%m/%y" }}
+                    {% if page.rate == 0.5 %}
+                        {% include 0.5-stars.html %}
+                    {% elsif page.rate == 1 %}
+                        {% include 1.0-stars.html %}
+                    {% elsif page.rate == 1.5 %}
+                        {% include 1.5-stars.html %}
+                    {% elsif page.rate == 2 %}
+                        {% include 2.0-stars.html %}
+                    {% elsif page.rate == 2.5 %}
+                        {% include 2.5-stars.html %}
+                    {% elsif page.rate == 3 %}
+                        {% include 3.0-stars.html %}
+                    {% elsif page.rate == 3.5 %}
+                        {% include 3.5-stars.html %}
+                    {% elsif page.rate == 4 %}
+                        {% include 4.0-stars.html %}
+                    {% elsif page.rate == 4.5 %}
+                        {% include 4.5-stars.html %}
+                    {% elsif page.rate == 5 %}
+                        {% include 5.0-stars.html %}
+                    {% endif %}
                     </h4>
+                    <h5><i class="fa fa-calendar"></i> {{ page.date | date: "%d/%m/%y" }}</h5>
                     <p class="flow-text">
                     {{ page.content }}
                     </p>
-                    <ul class="collapsible hoverable" data-collapsible="accordion">
+                    <ul class="collapsible hoverable left-align" data-collapsible="accordion">
+                        {% if page.place-phone %}
                         <li>
                             <div class="collapsible-header">
                                 <i class="fa fa-phone"></i> {{ page.place-phone }}
                             </div>
                         </li>
+                        {% endif %}
+
+                        {% if page.location %}
                         <li>
                             <div class="collapsible-header">
                                 <i class="fa fa-map"></i> {{ page.location }}
                             </div>
                         </li>
+                        {% endif %}
+
+                        {% if page.city %}
                         <li>
                             <div class="collapsible-header">
                                 <i class="fa fa-globe"></i>{{ page.city }} / {{ page.state}}
                             </div>
                         </li>
+                        {% endif %}
+
                         <li>
                             <div class="collapsible-header">
                                 <i class="fa fa-envira"></i> Café {{ page.coffee }}
                             </div>
-                            {% if page.coffee-special %}
                             <div class="collapsible-body">
                                 <ul class="collection">
                                     <li class="collection-item">Região: {{page.coffee-region}}</li>
@@ -55,8 +74,8 @@ layout: default
                                     <li class="collection-item">Processo: {{page.coffee-process}}</li>
                                 </ul>
                             </div>
-                            {% endif %}
                         </li>
+
                         <li>
                             <div class="collapsible-header">
                                 <i class="fa fa-coffee"></i> {{ page.price }}
@@ -66,33 +85,84 @@ layout: default
                 </div>
                 <div class="col s2 m2 l1">
                     <ul>
-                        <li><h4><a href="mailto:{{ page.place-email }}"><i class="fa fa-email black-text"></i></a></h4></li>
-                        <li><h4><a href="{{ page.place-facebook }}"><i class="fa fa-facebook black-text"></i></a></h4></li>
-                        <li><h4><a href="{{ page.place-instagram }}"><i class="fa fa-instagram black-text"></i></a></h4></li>
-                        <li><h4><a href="{{ page.place-foursquare }}"><i class="fa fa-foursquare black-text"></i></a></h4></li>
-                        <li><h4><a href="{{ page.place-tripadvisor }}"><i class="fa fa-tripadvisor  black-text"></i></a></h4></li>
+                        {% if page.place-email %}
+                        <li>
+                            <h5>
+                                <a href="mailto:{{ page.place-email }}"><i class="fa fa-email black-text"></i></a>
+                            </h5>
+                        </li>
+                        {% endif %}
+                        {% if page.place-site %}
+                        <li>
+                            <h5>
+                                <a href="{{ page.place-site }}"><i class="fa fa-globe black-text"></i></a>
+                            </h5>
+                        </li>
+                        {% endif %}
+                        {% if page.place-facebook %}
+                        <li>
+                            <h5>
+                                <a href="{{ page.place-facebook }}"><i class="fa fa-facebook black-text"></i></a>
+                            </h5>
+                        </li>
+                        {% endif %}
+                        {% if page.place-instagram %}
+                        <li>
+                            <h5>
+                                <a href="{{ page.place-instagram }}"><i class="fa fa-instagram black-text"></i></a>
+                            </h5>
+                        </li>
+                        {% endif %}
+                        {% if page.place-twitter%}
+                        <li>
+                            <h5>
+                                <a href="{{ page.place-twitter }}"><i class="fa fa-twitter black-text"></i></a>
+                            </h5>
+                        </li>
+                        {% endif %}
+                        {% if page.place-foursquare %}
+                        <li>
+                            <h5>
+                                <a href="{{ page.place-foursquare }}"><i class="fa fa-foursquare black-text"></i></a>
+                            </h5>
+                        </li>
+                        {% endif %}
+                        {% if page.place-tripadvisor %}
+                        <li>
+                            <h5>
+                                <a href="{{ page.place-tripadvisor }}"><i class="fa fa-tripadvisor  black-text"></i></a>
+                            </h5>
+                        </li>
+                        {% endif %}
                     </ul>
                 </div>
-                <div class="col s12 m12 l8">
+                <div class="col s12 m12 l7">
                     <div class="slider">
                         <ul class="slides">
-                            <li><img src="{{ page.cover-url}}"></li>
+                            {% if page.cover-url %}<li><img src="{{ page.cover-url}}"></li> {% endif %}
+                            {% if page.footer-url %}<li><img src="{{ page.footer-url}}"></li> {% endif %}
                             {% if page.photo-1-url %}<li><img src="{{ page.photo-1-url}}"></li> {% endif %}
                             {% if page.photo-2-url %}<li><img src="{{ page.photo-2-url}}"></li> {% endif %}
                             {% if page.photo-3-url %}<li><img src="{{ page.photo-3-url}}"></li> {% endif %}
                             {% if page.photo-4-url %}<li><img src="{{ page.photo-4-url}}"></li> {% endif %}
+                            {% if page.photo-5-url %}<li><img src="{{ page.photo-5-url}}"></li> {% endif %}
+                            {% if page.photo-6-url %}<li><img src="{{ page.photo-6-url}}"></li> {% endif %}
                         </ul>
                     </div>
                 </div>
             </div>
+            {% if page.location-map %}
             <div class="row">
                 <div class="col s12 m12 s12 center-align">
                     {{page.location-map}}
                 </div>
             </div>
+            {% endif %}
         </div>
     </div>
+    {% if page.footer-url %}
     <div class="parallax-container">
-        <div class="parallax"><img src="{{ page.photo-1-url }}"></img></div>
+        <div class="parallax"><img src="{{ page.footer-url }}"></img></div>
     </div>
+    {% endif %}
 </article>
