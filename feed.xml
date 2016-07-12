@@ -5,8 +5,8 @@
     <description></description>
     <link>www.umespressoumdia.cf/umespressoumdia/</link>
     <atom:link href="www.umespressoumdia.cf/umespressoumdia/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 12 Jul 2016 18:00:42 +0000</pubDate>
-    <lastBuildDate>Tue, 12 Jul 2016 18:00:42 +0000</lastBuildDate>
+    <pubDate>Tue, 12 Jul 2016 18:32:25 +0000</pubDate>
+    <lastBuildDate>Tue, 12 Jul 2016 18:32:25 +0000</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -54,32 +54,10 @@
       </item>
     
       <item>
-        <title>Café das Artes Unifor</title>
-        <description>
-</description>
-        <pubDate>Sat, 18 Jun 2016 21:00:00 +0000</pubDate>
-        <link>www.umespressoumdia.cf/umespressoumdia/posts/cafe-das-artes/</link>
-        <guid isPermaLink="true">www.umespressoumdia.cf/umespressoumdia/posts/cafe-das-artes/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>McCafé (Iguatemi)</title>
-        <description>
-</description>
-        <pubDate>Sat, 18 Jun 2016 21:00:00 +0000</pubDate>
-        <link>www.umespressoumdia.cf/umespressoumdia/posts/mccafe/</link>
-        <guid isPermaLink="true">www.umespressoumdia.cf/umespressoumdia/posts/mccafe/</guid>
-        
-        
-      </item>
-    
-      <item>
         <title>Kopenhagen (Iguatemi)</title>
         <description>
 </description>
-        <pubDate>Fri, 17 Jun 2016 21:15:00 +0000</pubDate>
+        <pubDate>Tue, 21 Jun 2016 17:00:00 +0000</pubDate>
         <link>www.umespressoumdia.cf/umespressoumdia/posts/kopenhagem-iguatemi/</link>
         <guid isPermaLink="true">www.umespressoumdia.cf/umespressoumdia/posts/kopenhagem-iguatemi/</guid>
         
@@ -87,12 +65,12 @@
       </item>
     
       <item>
-        <title>Dona Xícara (Iguatemi)</title>
+        <title>Café das Artes Unifor</title>
         <description>
 </description>
-        <pubDate>Fri, 17 Jun 2016 21:15:00 +0000</pubDate>
-        <link>www.umespressoumdia.cf/umespressoumdia/posts/dona-xicara/</link>
-        <guid isPermaLink="true">www.umespressoumdia.cf/umespressoumdia/posts/dona-xicara/</guid>
+        <pubDate>Sat, 18 Jun 2016 17:00:00 +0000</pubDate>
+        <link>www.umespressoumdia.cf/umespressoumdia/posts/cafe-das-artes/</link>
+        <guid isPermaLink="true">www.umespressoumdia.cf/umespressoumdia/posts/cafe-das-artes/</guid>
         
         
       </item>
@@ -101,9 +79,31 @@
         <title>Destino Express (Iguatemi)</title>
         <description>
 </description>
-        <pubDate>Fri, 17 Jun 2016 21:15:00 +0000</pubDate>
-        <link>www.umespressoumdia.cf/umespressoumdia/posts/destino-express/</link>
-        <guid isPermaLink="true">www.umespressoumdia.cf/umespressoumdia/posts/destino-express/</guid>
+        <pubDate>Fri, 17 Jun 2016 21:00:00 +0000</pubDate>
+        <link>www.umespressoumdia.cf/umespressoumdia/posts/5-destino-express/</link>
+        <guid isPermaLink="true">www.umespressoumdia.cf/umespressoumdia/posts/5-destino-express/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Dona Xícara (Iguatemi)</title>
+        <description>
+</description>
+        <pubDate>Fri, 17 Jun 2016 20:00:00 +0000</pubDate>
+        <link>www.umespressoumdia.cf/umespressoumdia/posts/4-dona-xicara/</link>
+        <guid isPermaLink="true">www.umespressoumdia.cf/umespressoumdia/posts/4-dona-xicara/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Croasonho (Iguatemi)</title>
+        <description>
+</description>
+        <pubDate>Fri, 17 Jun 2016 19:00:00 +0000</pubDate>
+        <link>www.umespressoumdia.cf/umespressoumdia/posts/3-croasonho/</link>
+        <guid isPermaLink="true">www.umespressoumdia.cf/umespressoumdia/posts/3-croasonho/</guid>
         
         
       </item>
@@ -112,9 +112,9 @@
         <title>Petit Café (Iguatemi)</title>
         <description>
 </description>
-        <pubDate>Fri, 17 Jun 2016 21:10:00 +0000</pubDate>
-        <link>www.umespressoumdia.cf/umespressoumdia/posts/petit-cafe/</link>
-        <guid isPermaLink="true">www.umespressoumdia.cf/umespressoumdia/posts/petit-cafe/</guid>
+        <pubDate>Fri, 17 Jun 2016 18:00:00 +0000</pubDate>
+        <link>www.umespressoumdia.cf/umespressoumdia/posts/2-petit-cafe/</link>
+        <guid isPermaLink="true">www.umespressoumdia.cf/umespressoumdia/posts/2-petit-cafe/</guid>
         
         
       </item>
