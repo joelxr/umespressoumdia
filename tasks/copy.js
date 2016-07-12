@@ -77,15 +77,15 @@ module.exports = function(grunt){
                 filter: 'isFile'
             },
             {
-                src: 'assets/vendor/mapbox.js/mapbox.css',
+                src: 'assets/vendor/mapbox-gl-js/mapbox-gl.css',
                 dest: '_site/assets/css/mapbox.css',
                 filter: 'isFile'
             },
             {
                 expand: true,
-                cwd: 'assets/vendor/mapbox.js/images/',
+                cwd: 'assets/vendor/mapbox-gl-js/font/',
                 src: '**',
-                dest: '_site/assets/images/',
+                dest: '_site/assets/font/',
                 filter: 'isFile'
             }
             ]
