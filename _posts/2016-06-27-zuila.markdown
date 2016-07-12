@@ -2,7 +2,7 @@
 layout: post
 
 date: 2016-06-27 20:00:00 -0300
-sequence: 8
+sequence: 25
 title: Zuila Café
 
 place: Zuila Café

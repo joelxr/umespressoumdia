@@ -1,31 +1,31 @@
 ---
 layout            : post
 date              : 2016-06-17 21:15:00
-sequence          : 19
-title             : Dona Xícara (Iguatemi)
-place             : Dona Xícara (Iguatemi)
+sequence          : 20
+title             : Destino Express (Iguatemi)
+place             : Destino Express (Iguatemi)
 place-instagram   : 
-place-facebook    : https://www.facebook.com/pages/Dona-X%C3%ADcara/206558942708035?fref=ts
+place-facebook    : https://www.facebook.com/pages/Destino-Express/206077202760384?fref=ts
 place-twitter     : 
 place-email       : 
-place-tripadvisor : https://www.tripadvisor.com.br/Restaurant_Review-g303293-d5706659-Reviews-Dona_Xicara-Fortaleza_State_of_Ceara.html
-place-foursquare  : https://pt.foursquare.com/v/dona-x%C3%ADcara/4bcf334f046076b0eed06d71
-place-phone       : (85) 3241 1986
+place-tripadvisor : 
+place-foursquare  : https://pt.foursquare.com/v/destino-express/4c79554f2d3ba14361d88dd0
+place-phone       : (85) 3392 5200
 place-site        : 
-coffee            : 3 Corações (Sul de Minas)
+coffee            : 3 Corações
 coffee-special    : 
-coffee-region     : Sul de Minas
+coffee-region     : 
 coffee-farm       : 
 coffee-producer   : 
 coffee-variety    : 
 coffee-altitude   : 
 coffee-notes      : 
 coffee-process    : 
-rate              : 4.5
-price             : R$ 5,00
-cover-url         : https://c1.staticflickr.com/9/8635/27607865813_78118b5eb3_o.jpg
-footer-url        : https://c2.staticflickr.com/8/7332/27607862723_7b1511545f_o.jpg
-photo-1-url       : https://c1.staticflickr.com/9/8884/27607864483_97c8966104_o.jpg
+rate              : 3
+price             : R$ 4,50
+cover-url         : https://c1.staticflickr.com/9/8868/28189981276_f3aa40e891_o.jpg
+footer-url        : https://c1.staticflickr.com/9/8820/27608311683_d1720bf031_o.jpg
+photo-1-url       : https://c1.staticflickr.com/9/8830/28146389541_cbe3513a35_o.jpg
 photo-2-url       : 
 photo-3-url       : 
 photo-4-url       : 

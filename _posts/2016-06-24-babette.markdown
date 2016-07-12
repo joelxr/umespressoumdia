@@ -1,0 +1,41 @@
+---
+layout            : post
+date              : 2016-06-24 21:15:00
+sequence          : 23
+title             : Babette Bistrot e Pães
+place             : Babette Bistrot e Pães
+place-instagram   : https://www.instagram.com/babettefor/
+place-facebook    : https://www.facebook.com/babettefor/?fref=ts
+place-twitter     : https://twitter.com/babettefor
+place-email       : 
+place-tripadvisor : https://www.tripadvisor.com.br/Restaurant_Review-g303293-d4066646-Reviews-Babette_Bistrot_e_Paes-Fortaleza_State_of_Ceara.html
+place-foursquare  : https://pt.foursquare.com/v/babette-bistrot-e-p%C3%A3es/5159d464e4b0b579b797699b
+place-phone       : (85) 3248 6065
+place-site        : http://babettebistrotepaes.com.br/site/
+coffee            : Delta Cafés Platinum
+coffee-special    : 
+coffee-region     : 
+coffee-farm       : 
+coffee-producer   : 
+coffee-variety    : 
+coffee-altitude   : 
+coffee-notes      : 
+coffee-process    : 
+rate              : 3.5
+price             : R$ 4,50
+cover-url         : https://c2.staticflickr.com/8/7325/27943788150_4524dbaee5_o.jpg
+footer-url        : https://c1.staticflickr.com/9/8813/28120598262_07d21316a6_o.jpg
+photo-1-url       : https://c1.staticflickr.com/9/8788/27943782920_89cc893661_o.jpg
+photo-2-url       : https://c2.staticflickr.com/8/7324/27943780580_7f6ca76499_o.jpg
+photo-3-url       : 
+photo-4-url       : 
+photo-5-url       : 
+photo-6-url       : 
+location          : Rua Monsenhor Bruno, 458.
+city              : Fortaleza
+state             : CE
+location-url      : https://goo.gl/maps/bo1PLuVUXFp
+location-lat      : -3.725957
+location-long     : -38.507531
+location-map      : <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.384940592411!2d-38.50967638573128!3d-3.7259620442022645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74842ecbcd2d3%3A0xb2a26e98a4e68f82!2sBabette+Bistrot+e+P%C3%A3es!5e0!3m2!1spt-BR!2sbr!4v1468183547793" width="100%" height="450" frameborder="0" style="border:0" scrolling="no"></iframe>
+---
