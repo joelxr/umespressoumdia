@@ -1,7 +1,7 @@
 ---
 layout            : post
 date              : 2016-06-14 21:00:00
-sequence          : 12
+sequence          : 13
 title             : Empório Delitalia
 place             : Empório Delitalia
 place-instagram   : https://www.instagram.com/emporiodelitalia/

@@ -1,6 +1,6 @@
 ---
 layout            : post
-date              : 2016-06-11 21:00:00
+date              : 2016-06-11 18:00:00
 sequence          : 11
 title             : Vanilla Caffè (RioMar)
 place             : Vanilla Caffè (RioMar)

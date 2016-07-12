@@ -1,7 +1,7 @@
 ---
 layout            : post
-date              : 2016-06-18 21:00:00
-sequence          : 17
+date              : 2016-06-18 17:00:00
+sequence          : 16
 title             : Café das Artes Unifor
 place             : Café das Artes Unifor
 place-instagram   : 

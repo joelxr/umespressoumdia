@@ -1,7 +1,7 @@
 ---
 layout            : post
 date              : 2016-06-26 21:15:00
-sequence          : 25
+sequence          : 24
 title             : Sweet Coffee (Iguatemi)
 place             : Sweet Coffee (Iguatemi)
 place-instagram   : 

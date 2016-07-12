@@ -1,7 +1,7 @@
 ---
 layout            : post
 date              : 2016-06-25 21:15:00
-sequence          : 24
+sequence          : 23
 title             : Sodiê Doces
 place             : Sodiê Doces
 place-instagram   : https://www.instagram.com/SodieDoces/
