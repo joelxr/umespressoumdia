@@ -41,7 +41,7 @@ module.exports = function(grunt){
                 expand: true,
                 cwd: 'assets/vendor/mapbox.js/images/',
                 src: '**',
-                dest: 'assets/images/',
+                dest: 'assets/css/images/',
                 filter: 'isFile'
             }
             ]
@@ -77,15 +77,15 @@ module.exports = function(grunt){
                 filter: 'isFile'
             },
             {
-                src: 'assets/vendor/mapbox-gl-js/mapbox-gl.css',
+                src: 'assets/vendor/mapbox.js/mapbox.css',
                 dest: '_site/assets/css/mapbox.css',
                 filter: 'isFile'
             },
             {
                 expand: true,
-                cwd: 'assets/vendor/mapbox-gl-js/font/',
+                cwd: 'assets/vendor/mapbox.js/images/',
                 src: '**',
-                dest: '_site/assets/font/',
+                dest: '_site/assets/css/images/',
                 filter: 'isFile'
             }
             ]

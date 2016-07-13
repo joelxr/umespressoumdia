@@ -4,14 +4,14 @@ module.exports = function(grunt){
             files: {
                 'assets/js/jquery.js' : 'assets/vendor/jquery/dist/jquery.js',
                 'assets/js/materialize.js' : 'assets/vendor/Materialize/dist/js/materialize.js',
-                'assets/js/mapbox.js' : 'assets/vendor/mapbox-gl-js/mapbox-gl.js',
+                'assets/js/mapbox.js' : 'assets/vendor/mapbox.js/mapbox.js',
             }
         },
         dev: {
             files: {
                 '_site/assets/js/jquery.js' : 'assets/vendor/jquery/dist/jquery.js',
                 '_site/assets/js/materialize.js' : 'assets/vendor/Materialize/dist/js/materialize.js',
-                '_site/assets/js/mapbox.js' : 'assets/vendor/mapbox-gl-js/mapbox-gl.js',
+                '_site/assets/js/mapbox.js' : 'assets/vendor/mapbox.js/mapbox.js',
             }
         }
     });

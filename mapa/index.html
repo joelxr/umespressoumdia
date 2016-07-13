@@ -4,86 +4,88 @@ layout: default
 <div class="video-container">
     <div id='map' style="position:absolute; top:0; bottom:0; width:100%;"></div>
     <script>
-mapboxgl.accessToken = 'pk.eyJ1Ijoiam9lbHhyIiwiYSI6ImNpcTI3b3l5MzAxM3ZmaW5uMDBnMjYxd2IifQ.8HAKtUOggFVWSy1OlDvx2Q';
-var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v9',
-    center: [-38.506421,-3.736842],
-    zoom: 10
-});
 
-map.on('load', function () {
-    map.addSource("coffees", {
-        "type": "geojson",
-        "data": {
-            "type": "FeatureCollection",
-            "features": [
-            {% for post in site.posts %}
-            {
-                "type": "Feature",
-                "geometry": {
-                    "type": "Point",
-                    "coordinates": [{{ post.location-long }}, {{ post.location-lat }} ]
-                },
-                "properties": {
-                    "title": "{{ post.place }}"
-                }
-            },
-            {% endfor %}
+L.mapbox.accessToken = 'pk.eyJ1Ijoiam9lbHhyIiwiYSI6ImNpcTI3b3l5MzAxM3ZmaW5uMDBnMjYxd2IifQ.8HAKtUOggFVWSy1OlDvx2Q';
+var map = L.mapbox.map('map', 'mapbox.streets').setView([-3.742394, -38.511909], 13) ;
+var myLayer = L.mapbox.featureLayer().addTo(map);
+
+var geojson = {
+    type: 'FeatureCollection',
+    features: [
+    {% for post in site.posts %}
+    {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
+            coordinates: [
+            {{ post.location-long }},
+            {{ post.location-lat }}
             ]
         },
-        cluster: true,
-        clusterMaxZoom: 20,
-        clusterRadius: 50
-    });
-
-    map.addLayer({
-        "id": "coffees",
-        "type": "symbol",
-        "source": "coffees",
-        "layout": {
-            "icon-image": "marker-15",
+        properties: {
+            title: '{{ post.place }}',
+            description: '{{ post.location }}',
+            url: '{{ post.url }}',
+            date: '{{ post.date | date: "%Y-%m-%d" }}',
+            location: '{{ post.location }}',
+            city: '{{ post.city }}',
+            state: '{{ post.state }}',
+            coffee: '{{ post.coffee }}',
+            price: '{{ post.price }}',
+            {% if post.rate == 0.5 %}
+            rate:  '<i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
+            {% elsif post.rate == 1 %}
+            rate:  '',
+            {% elsif post.rate == 1.5 %}
+            rate:  '',
+            {% elsif post.rate == 2 %}
+            rate:  '',
+            {% elsif post.rate == 2.5 %}
+            rate:  '',
+            {% elsif post.rate == 3 %}
+            rate:  '',
+            {% elsif post.rate == 3.5 %}
+            rate:  '',
+            {% elsif post.rate == 4 %}
+            rate:  '',
+            {% elsif post.rate == 4.5 %}
+            rate:  '',
+            {% elsif post.rate == 5 %}
+            rate:  '',
+            {% endif %}
+            'marker-size': 'large',
+            'marker-color': '#BE9A6B',
+            'marker-symbol': 'cafe'
         }
-    });
+    },
+    {% endfor %}
+    ]
+};
 
-
-    var layers = [
-        [150, '#f28cb1'],
-        [20, '#f1f075'],
-        [0, '#51bbd6']
-    ];
-
-        layers.forEach(function (layer, i) {
-            map.addLayer({
-                "id": "cluster-" + i,
-                "type": "circle",
-                "source": "coffees",
-                "paint": {
-                    "circle-color": layer[1],
-                    "circle-radius": 18
-                },
-                "filter": i === 0 ?
-                    [">=", "point_count", layer[0]] :
-                    ["all",
-                [">=", "point_count", layer[0]],
-                ["<", "point_count", layers[i - 1][0]]]
-            });
-        });
-
-        // Add a layer for the clusters' count labels
-        map.addLayer({
-            "id": "cluster-count",
-            "type": "symbol",
-            "source": "coffees",
-            "layout": {
-                "text-field": "{point_count}",
-                "text-font": [
-                    "DIN Offc Pro Medium",
-                    "Arial Unicode MS Bold"
-                ],
-                "text-size": 12
-            }
-        });
+myLayer.on('mouseover', function(e) {
+    e.layer.openPopup();
 });
+
+myLayer.on('ready', function() {
+    map.fitBounds(myLayer.getBounds());
+});
+
+myLayer.on('layeradd', function(e) {
+    var marker = e.layer;
+    var feature = marker.feature;
+    var popupContent =  
+        '<ul style="margin-left: 2px;">' +
+        '<li><a target="_blank" style="max-width:100%" href="' + feature.properties.url + '">' + feature.properties.title +  '</a></li>' +
+        '<li>' + feature.properties.rate + '</li>' +
+        '<li><i class="fa fa-calendar"></i> ' + feature.properties.date + '</li>' +
+        '<li><i class="fa fa-map"></i> ' + feature.properties.location + ' ' + feature.properties.city + ' ' + feature.properties.state +'</a></li>' +
+        '<li><i class="fa fa-envira"></i> Café ' + feature.properties.coffee + '</li>' +
+        '<li><i class="fa fa-credit-card"></i> ' + feature.properties.price + '</li>' +
+        '</ul>';
+    marker.bindPopup(popupContent, {closeButton: true, minWidth: 320});
+});
+
+myLayer.setGeoJSON(geojson);
     </script>
-</div>
+
+
