@@ -20,7 +20,8 @@
     "font-awesome": "fontawesome#^4.6.1",
     "Materialize": "materialize#^0.97.6",
     "font-abel": "^1.0.0",
-    "jquery": "2.1.4"
+    "jquery": "2.1.4",
+    "mapbox.js": "^2.4.0"
   },
   "devDependencies": {
     "jquery": "2.1.4"
