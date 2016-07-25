@@ -35,23 +35,23 @@ var geojson = {
             {% if post.rate == 0.5 %}
             rate:  '<i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
             {% elsif post.rate == 1 %}
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
             {% elsif post.rate == 1.5 %}
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
             {% elsif post.rate == 2 %}
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
             {% elsif post.rate == 2.5 %}
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
             {% elsif post.rate == 3 %}
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
             {% elsif post.rate == 3.5 %}
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>',
             {% elsif post.rate == 4 %}
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>',
             {% elsif post.rate == 4.5 %}
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i>',
             {% elsif post.rate == 5 %}
-            rate:  '',
+            rate:  '<div class="yellow-text text-darken-3"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>',
             {% endif %}
             'marker-size': 'large',
             'marker-color': '#BE9A6B',
@@ -66,14 +66,19 @@ myLayer.on('mouseover', function(e) {
     e.layer.openPopup();
 });
 
-myLayer.on('ready', function() {
+myLayer.on('ready', function(e) {
     map.fitBounds(myLayer.getBounds());
+    var clusterGroup = new L.MarkerClusterGroup();
+    e.target.eachLayer(function(layer) {
+        clusterGroup.addLayer(layer);
+    });
+    map.addLayer(clusterGroup);
 });
 
 myLayer.on('layeradd', function(e) {
     var marker = e.layer;
     var feature = marker.feature;
-    var popupContent =  
+    var popupContent =
         '<ul style="margin-left: 2px;">' +
         '<li><a target="_blank" style="max-width:100%" href="' + feature.properties.url + '">' + feature.properties.title +  '</a></li>' +
         '<li>' + feature.properties.rate + '</li>' +
