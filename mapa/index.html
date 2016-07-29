@@ -3,13 +3,14 @@ layout: default
 ---
 <div class="video-container">
     <div id='map' style="position:absolute; top:0; bottom:0; width:100%;"></div>
+    <a href='#' id='geolocate'>PERTO DE MIM</a>
     <script>
 
 L.mapbox.accessToken = 'pk.eyJ1Ijoiam9lbHhyIiwiYSI6ImNpcTI3b3l5MzAxM3ZmaW5uMDBnMjYxd2IifQ.8HAKtUOggFVWSy1OlDvx2Q';
 var map = L.mapbox.map('map', 'mapbox.streets').setView([-3.742394, -38.511909], 13) ;
-var myLayer = L.mapbox.featureLayer().addTo(map);
+var markers = L.markerClusterGroup();
 
-var geojson = {
+var json = {
     type: 'FeatureCollection',
     features: [
     {% for post in site.posts %}
@@ -53,29 +54,27 @@ var geojson = {
             {% elsif post.rate == 5 %}
             rate:  '<div class="yellow-text text-darken-3"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>',
             {% endif %}
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "{{ site.baseurl }}/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     {% endfor %}
     ]
 };
 
-myLayer.on('mouseover', function(e) {
-    e.layer.openPopup();
+var geojson = L.geoJson(json, {
+    onEachFeature: function (feature, layer) {
+        layer.setIcon(L.icon(feature.properties.icon));
+    }
 });
 
-myLayer.on('ready', function(e) {
-    map.fitBounds(myLayer.getBounds());
-    var clusterGroup = new L.MarkerClusterGroup();
-    e.target.eachLayer(function(layer) {
-        clusterGroup.addLayer(layer);
-    });
-    map.addLayer(clusterGroup);
-});
+markers.addLayer(geojson);
+markers.addTo(map);
 
-myLayer.on('layeradd', function(e) {
+markers.on('click', function(e) {
+    map.panTo(e.layer.getLatLng(),16);
     var marker = e.layer;
     var feature = marker.feature;
     var popupContent =
@@ -88,9 +87,29 @@ myLayer.on('layeradd', function(e) {
         '<li><i class="fa fa-credit-card"></i> ' + feature.properties.price + '</li>' +
         '</ul>';
     marker.bindPopup(popupContent, {closeButton: true, minWidth: 320});
+    marker.openPopup();
 });
 
-myLayer.setGeoJSON(geojson);
+if (!navigator.geolocation) {
+    geolocate.innerHTML = 'Geolocation is not available';
+} else {
+    map.locate();
+    geolocate.onclick = function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        map.locate();
+    };
+} 
+
+map.on('locationfound', function(e) {
+    map.fitBounds(e.bounds);
+    map.setZoom(15);
+    geolocate.parentNode.removeChild(geolocate);
+});
+
+map.on('locationerror', function() {
+    geolocate.innerHTML = 'Position could not be found';
+});
     </script>
 
 

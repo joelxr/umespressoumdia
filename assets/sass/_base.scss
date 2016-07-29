@@ -72,7 +72,7 @@ ul, ol {
 li {
     > ul,
     > ol {
-         margin-bottom: 0;
+        margin-bottom: 0;
     }
 }
 
@@ -202,5 +202,46 @@ pre {
         path {
             fill: $grey-color;
         }
+    }
+}
+
+
+#geolocate {
+    font-weight: 600;
+    background: #fff;
+    position: absolute;
+    top: 1%;
+    left: 10%;
+    width: 158px;
+    margin-left: -80px;
+    z-index: 1000;
+    font-size: 21px;
+    text-align: center;
+    padding: 10px 0;
+    color: #3C4E5A;
+    display: block;
+    border: 1px solid #BBB;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+#geolocate:hover {
+    background: #ECF5FA;
+}
+
+@media only screen and (min-width: 768px) {
+    #geolocate {
+        left: 8%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #geolocate {
+        left: 40%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    #geolocate {
+        left: 40%;
     }
 }
