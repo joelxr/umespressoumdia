@@ -22,7 +22,8 @@
     "font-abel": "^1.0.0",
     "jquery": "2.1.4",
     "mapbox.js": "^2.4.0",
-    "leaflet.markercluster": "^0.5.0"
+    "leaflet.markercluster": "^0.5.0",
+    "Leaflet.awesome-markers": "leaflet.awesome-markers#^2.0.2"
   },
   "devDependencies": {
     "jquery": "2.1.4"
