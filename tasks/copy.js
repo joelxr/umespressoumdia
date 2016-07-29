@@ -61,9 +61,21 @@ module.exports = function(grunt){
                 dest: 'assets/css/leaflet.markercluster.css',
                 filter: 'isFile'
             },
-           {
+            {
                 src: 'assets/vendor/leaflet.markercluster/dist/MarkerCluster.Default.css',
                 dest: 'assets/css/leaflet.markercluster.default.css',
+                filter: 'isFile'
+            },
+            {
+                src: 'assets/vendor/leaflet.awesome-markers/dist/leaflet.awesome-markers.css',
+                dest: 'assets/css/leaflet.awesome-markers.css',
+                filter: 'isFile'
+            },
+            {
+                expand: true,
+                cwd: 'assets/vendor/Leaflet.awesome-markers/dist/images/',
+                src: '**',
+                dest: 'assets/css/images/',
                 filter: 'isFile'
             },
             ]
@@ -132,7 +144,18 @@ module.exports = function(grunt){
                 dest: '_site/assets/css/leaflet.markercluster.default.css',
                 filter: 'isFile'
             },
-
+            {
+                src: 'assets/vendor/leaflet.awesome-markers/dist/leaflet.awesome-markers.css',
+                dest: '_site/assets/css/leaflet.awesome-markers.css',
+                filter: 'isFile'
+            },
+            {
+                expand: true,
+                cwd: 'assets/vendor/Leaflet.awesome-markers/dist/images/',
+                src: '**',
+                dest: '_site/assets/css/images/',
+                filter: 'isFile'
+            },
             ]
         }
     });

@@ -7,6 +7,7 @@ module.exports = function(grunt){
                 'assets/js/mapbox.js' : 'assets/vendor/mapbox.js/mapbox.js',
                 'assets/js/leaflet.js' : 'assets/vendor/leaflet/dist/leaflet-src.js',
                 'assets/js/leaflet.markercluster.js' : 'assets/vendor/leaflet.markercluster/dist/leaflet.markercluster-src.js',
+                'assets/js/leaflet.awesome-markers.js' : 'assets/vendor/Leaflet.awesome-markers/dist/leaflet.awesome-markers.js',
             }
         },
         dev: {
@@ -16,6 +17,7 @@ module.exports = function(grunt){
                 '_site/assets/js/mapbox.js' : 'assets/vendor/mapbox.js/mapbox.js',
                 '_site/assets/js/leaflet.js' : 'assets/vendor/leaflet/dist/leaflet.js',
                 '_site/assets/js/leaflet.markercluster.js' : 'assets/vendor/leaflet.markercluster/dist/leatlet.markercluster.js',
+                '_site/assets/js/leaflet.awesome-markers.js' : 'assets/vendor/Leaflet.awesome-markers/dist/leaflet.awesome-markers.js',
             }
         }
     });

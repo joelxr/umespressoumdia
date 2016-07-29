@@ -77,7 +77,7 @@
 
         <div class="video-container">
     <div id='map' style="position:absolute; top:0; bottom:0; width:100%;"></div>
-    <a href='#' id='geolocate'>PERTO DE MIM</a>
+    <a href='#' id='geolocate'>MINHA LOCALIZAÇÃO</a>
     <script>
 
 L.mapbox.accessToken = 'pk.eyJ1Ijoiam9lbHhyIiwiYSI6ImNpcTI3b3l5MzAxM3ZmaW5uMDBnMjYxd2IifQ.8HAKtUOggFVWSy1OlDvx2Q';
@@ -815,6 +815,11 @@ var json = {
     
     ]
 };
+
+  var redMarker = L.AwesomeMarkers.icon({
+    icon: 'coffee',
+    markerColor: 'red'
+  });
 
 var geojson = L.geoJson(json, {
     onEachFeature: function (feature, layer) {
