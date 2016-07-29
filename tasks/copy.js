@@ -43,7 +43,29 @@ module.exports = function(grunt){
                 src: '**',
                 dest: 'assets/css/images/',
                 filter: 'isFile'
-            }
+            },
+            {
+                src: 'assets/vendor/leaflet/dist/leaflet.css',
+                dest: 'assets/css/leaflet.css',
+                filter: 'isFile'
+            },
+            {
+                expand: true,
+                cwd: 'assets/vendor/leaflet/dist/images/',
+                src: '**',
+                dest: 'assets/css/images/',
+                filter: 'isFile'
+            },
+            {
+                src: 'assets/vendor/leaflet.markercluster/dist/MarkerCluster.css',
+                dest: 'assets/css/leaflet.markercluster.css',
+                filter: 'isFile'
+            },
+           {
+                src: 'assets/vendor/leaflet.markercluster/dist/MarkerCluster.Default.css',
+                dest: 'assets/css/leaflet.markercluster.default.css',
+                filter: 'isFile'
+            },
             ]
         },
         dev: {
@@ -87,7 +109,30 @@ module.exports = function(grunt){
                 src: '**',
                 dest: '_site/assets/css/images/',
                 filter: 'isFile'
-            }
+            },
+            {
+                src: 'assets/vendor/leaflet/dist/leaflet.css',
+                dest: '_site/assets/css/leaflet.css',
+                filter: 'isFile'
+            },
+            {
+                expand: true,
+                cwd: 'assets/vendor/leaflet/dist/images/',
+                src: '**',
+                dest: '_site/assets/css/images/',
+                filter: 'isFile'
+            },
+            {
+                src: 'assets/vendor/leaflet.markercluster/dist/MarkerCluster.css',
+                dest: '_site/assets/css/leaflet.markercluster.css',
+                filter: 'isFile'
+            },
+            {
+                src: 'assets/vendor/leaflet.markercluster/dist/MarkerCluster.Default.css',
+                dest: '_site/assets/css/leaflet.markercluster.default.css',
+                filter: 'isFile'
+            },
+
             ]
         }
     });

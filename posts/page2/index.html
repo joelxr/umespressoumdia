@@ -33,9 +33,12 @@
     <link rel="icon" href="/umespressoumdia/assets/images/icons/favicon-62.png" sizes="62x62" type="image/png"/>
     <link rel="icon" href="/umespressoumdia/assets/images/icons/favicon-192.png" sizes="192x192" type="image/png"/>
     <!-- Mapbox -->
-
     <script type="text/javascript" src="/umespressoumdia/assets/js/mapbox.js"></script>
+    <script type="text/javascript" src="/umespressoumdia/assets/js/leaflet.markercluster.js"></script>
     <link type="text/css" rel="stylesheet" href="/umespressoumdia/assets/css/mapbox.css">
+    <link type="text/css" rel="stylesheet" href="/umespressoumdia/assets/css/leaflet.css">
+    <link type="text/css" rel="stylesheet" href="/umespressoumdia/assets/css/leaflet.markercluster.css">
+    <link type="text/css" rel="stylesheet" href="/umespressoumdia/assets/css/leaflet.markercluster.default.css">
 
     <title>Um espresso, um dia.</title>
 </head>
@@ -47,6 +50,7 @@
             <div class="nav-wrapper">
                 <a href="/umespressoumdia/" class="brand-logo center"><i class="fa fa-coffee"></i> Um espresso, um dia.</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="/umespressoumdia/">Home</a></li>
                     <li><a  href="/umespressoumdia/mapa">Mapa</a></li>
                     
                     
@@ -84,8 +88,8 @@
                     <spam class="post-link">
                         <spam class="activator">Petit Café (Iguatemi)</spam>
                         <spam class="right">
-                            <a class="btn-floating btn-small waves-effect waves-light brown" href="/umespressoumdia/posts/2-petit-cafe/">
-                                <i class="fa fa-info"></i>
+                            <a class="btn-link btn-small" href="/umespressoumdia/posts/2-petit-cafe/">
+                                <i class="fa fa-info-circle"></i>
                             </a>
                         </spam>
                     </spam>
@@ -126,8 +130,8 @@
                     <spam class="post-link">
                         <spam class="activator">McCafé (Iguatemi)</spam>
                         <spam class="right">
-                            <a class="btn-floating btn-small waves-effect waves-light brown" href="/umespressoumdia/posts/1-mccafe/">
-                                <i class="fa fa-info"></i>
+                            <a class="btn-link btn-small" href="/umespressoumdia/posts/1-mccafe/">
+                                <i class="fa fa-info-circle"></i>
                             </a>
                         </spam>
                     </spam>
@@ -168,8 +172,8 @@
                     <spam class="post-link">
                         <spam class="activator">Montmarttre</spam>
                         <spam class="right">
-                            <a class="btn-floating btn-small waves-effect waves-light brown" href="/umespressoumdia/posts/montmarttre/">
-                                <i class="fa fa-info"></i>
+                            <a class="btn-link btn-small" href="/umespressoumdia/posts/montmarttre/">
+                                <i class="fa fa-info-circle"></i>
                             </a>
                         </spam>
                     </spam>
@@ -210,8 +214,8 @@
                     <spam class="post-link">
                         <spam class="activator">Empório Delitalia</spam>
                         <spam class="right">
-                            <a class="btn-floating btn-small waves-effect waves-light brown" href="/umespressoumdia/posts/emporio-delitalia/">
-                                <i class="fa fa-info"></i>
+                            <a class="btn-link btn-small" href="/umespressoumdia/posts/emporio-delitalia/">
+                                <i class="fa fa-info-circle"></i>
                             </a>
                         </spam>
                     </spam>
@@ -252,8 +256,8 @@
                     <spam class="post-link">
                         <spam class="activator">Il Espresso (RioMar)</spam>
                         <spam class="right">
-                            <a class="btn-floating btn-small waves-effect waves-light brown" href="/umespressoumdia/posts/3-il-espress-riomar/">
-                                <i class="fa fa-info"></i>
+                            <a class="btn-link btn-small" href="/umespressoumdia/posts/3-il-espress-riomar/">
+                                <i class="fa fa-info-circle"></i>
                             </a>
                         </spam>
                     </spam>
@@ -294,8 +298,8 @@
                     <spam class="post-link">
                         <spam class="activator">Vanilla Caffè (RioMar)</spam>
                         <spam class="right">
-                            <a class="btn-floating btn-small waves-effect waves-light brown" href="/umespressoumdia/posts/2-vanilla/">
-                                <i class="fa fa-info"></i>
+                            <a class="btn-link btn-small" href="/umespressoumdia/posts/2-vanilla/">
+                                <i class="fa fa-info-circle"></i>
                             </a>
                         </spam>
                     </spam>
@@ -336,8 +340,8 @@
                     <spam class="post-link">
                         <spam class="activator">Freddo (RioMar)</spam>
                         <spam class="right">
-                            <a class="btn-floating btn-small waves-effect waves-light brown" href="/umespressoumdia/posts/1-freddo/">
-                                <i class="fa fa-info"></i>
+                            <a class="btn-link btn-small" href="/umespressoumdia/posts/1-freddo/">
+                                <i class="fa fa-info-circle"></i>
                             </a>
                         </spam>
                     </spam>
@@ -378,8 +382,8 @@
                     <spam class="post-link">
                         <spam class="activator">La Bella Italia</spam>
                         <spam class="right">
-                            <a class="btn-floating btn-small waves-effect waves-light brown" href="/umespressoumdia/posts/la-bella-italia/">
-                                <i class="fa fa-info"></i>
+                            <a class="btn-link btn-small" href="/umespressoumdia/posts/la-bella-italia/">
+                                <i class="fa fa-info-circle"></i>
                             </a>
                         </spam>
                     </spam>
@@ -389,9 +393,7 @@
                     <ul style="margin-left: 2px;">
                         <li>
                             
-                            <div class="yellow-text text-darken-3">
-    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-</div>
+                            <div class="yellow-text text-darken-3"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
 
                             
                         </li>
@@ -422,8 +424,8 @@
                     <spam class="post-link">
                         <spam class="activator">Chocoberry</spam>
                         <spam class="right">
-                            <a class="btn-floating btn-small waves-effect waves-light brown" href="/umespressoumdia/posts/chocoberry/">
-                                <i class="fa fa-info"></i>
+                            <a class="btn-link btn-small" href="/umespressoumdia/posts/chocoberry/">
+                                <i class="fa fa-info-circle"></i>
                             </a>
                         </spam>
                     </spam>

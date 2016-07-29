@@ -33,9 +33,12 @@
     <link rel="icon" href="/umespressoumdia/assets/images/icons/favicon-62.png" sizes="62x62" type="image/png"/>
     <link rel="icon" href="/umespressoumdia/assets/images/icons/favicon-192.png" sizes="192x192" type="image/png"/>
     <!-- Mapbox -->
-
     <script type="text/javascript" src="/umespressoumdia/assets/js/mapbox.js"></script>
+    <script type="text/javascript" src="/umespressoumdia/assets/js/leaflet.markercluster.js"></script>
     <link type="text/css" rel="stylesheet" href="/umespressoumdia/assets/css/mapbox.css">
+    <link type="text/css" rel="stylesheet" href="/umespressoumdia/assets/css/leaflet.css">
+    <link type="text/css" rel="stylesheet" href="/umespressoumdia/assets/css/leaflet.markercluster.css">
+    <link type="text/css" rel="stylesheet" href="/umespressoumdia/assets/css/leaflet.markercluster.default.css">
 
     <title>Um espresso, um dia.</title>
 </head>
@@ -47,6 +50,7 @@
             <div class="nav-wrapper">
                 <a href="/umespressoumdia/" class="brand-logo center"><i class="fa fa-coffee"></i> Um espresso, um dia.</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="/umespressoumdia/">Home</a></li>
                     <li><a  href="/umespressoumdia/mapa">Mapa</a></li>
                     
                     
@@ -73,13 +77,14 @@
 
         <div class="video-container">
     <div id='map' style="position:absolute; top:0; bottom:0; width:100%;"></div>
+    <a href='#' id='geolocate'>PERTO DE MIM</a>
     <script>
 
 L.mapbox.accessToken = 'pk.eyJ1Ijoiam9lbHhyIiwiYSI6ImNpcTI3b3l5MzAxM3ZmaW5uMDBnMjYxd2IifQ.8HAKtUOggFVWSy1OlDvx2Q';
 var map = L.mapbox.map('map', 'mapbox.streets').setView([-3.742394, -38.511909], 13) ;
-var myLayer = L.mapbox.featureLayer().addTo(map);
+var markers = L.markerClusterGroup();
 
-var geojson = {
+var json = {
     type: 'FeatureCollection',
     features: [
     
@@ -103,11 +108,12 @@ var geojson = {
             coffee: '3 Corações',
             price: 'R$ 4,80',
             
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
             
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     
@@ -131,11 +137,12 @@ var geojson = {
             coffee: 'Sul de Minas',
             price: 'R$ 4,50',
             
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>',
             
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     
@@ -159,11 +166,12 @@ var geojson = {
             coffee: 'Melitta Espresso',
             price: 'R$ 4,80',
             
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>',
             
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     
@@ -187,11 +195,12 @@ var geojson = {
             coffee: 'Delta Cafés Platinum',
             price: 'R$ 4,50',
             
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>',
             
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     
@@ -215,11 +224,12 @@ var geojson = {
             coffee: 'Kopenhagen Café',
             price: 'R$ 6,00',
             
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i>',
             
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     
@@ -243,11 +253,12 @@ var geojson = {
             coffee: '3 corações (Cerrado Mineiro)',
             price: 'R$ 5,00',
             
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i>',
             
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     
@@ -271,11 +282,12 @@ var geojson = {
             coffee: '3 Corações',
             price: 'R$ 4,50',
             
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
             
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     
@@ -299,11 +311,12 @@ var geojson = {
             coffee: '3 Corações (Sul de Minas)',
             price: 'R$ 5,00',
             
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i>',
             
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     
@@ -327,11 +340,12 @@ var geojson = {
             coffee: 'Café do Centro Gourmet',
             price: 'R$ 4,35',
             
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
             
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     
@@ -355,11 +369,12 @@ var geojson = {
             coffee: 'Santa Clara',
             price: 'R$ 3,90',
             
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
             
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     
@@ -383,11 +398,12 @@ var geojson = {
             coffee: 'Barista Prime',
             price: 'R$ 3,50',
             
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>',
             
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     
@@ -411,11 +427,12 @@ var geojson = {
             coffee: 'Barista Prime',
             price: 'R$ 3,60',
             
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
             
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     
@@ -439,11 +456,12 @@ var geojson = {
             coffee: '3 Corações',
             price: 'R$ 4,50',
             
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
             
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     
@@ -467,11 +485,12 @@ var geojson = {
             coffee: '3 corações (Cerrado Mineiro)',
             price: 'R$ 4,80',
             
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i>',
             
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     
@@ -495,11 +514,12 @@ var geojson = {
             coffee: 'Vanilla',
             price: 'R$ 4,50',
             
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>',
             
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     
@@ -523,11 +543,12 @@ var geojson = {
             coffee: 'Lavazza',
             price: 'R$ 5,50',
             
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
             
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     
@@ -551,11 +572,12 @@ var geojson = {
             coffee: 'Barista',
             price: 'R$ 3,90',
             
-            rate:  '',
+            rate:  '<div class="yellow-text text-darken-3"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>',
             
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     
@@ -579,11 +601,12 @@ var geojson = {
             coffee: 'Piatã',
             price: 'R$ 4,00',
             
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i>',
             
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     
@@ -607,11 +630,12 @@ var geojson = {
             coffee: 'Bike Café',
             price: 'R$ 3,00',
             
-            rate:  '',
+            rate:  '<div class="yellow-text text-darken-3"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>',
             
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     
@@ -635,11 +659,12 @@ var geojson = {
             coffee: 'Arte',
             price: 'R$ 4,00',
             
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>',
             
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     
@@ -663,11 +688,12 @@ var geojson = {
             coffee: 'Barista Prime',
             price: 'R$ 5,00',
             
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
             
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     
@@ -691,11 +717,12 @@ var geojson = {
             coffee: 'Kaphé Especial',
             price: 'R$ 4,80',
             
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>',
             
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     
@@ -719,11 +746,12 @@ var geojson = {
             coffee: 'Barista',
             price: 'R$ 4,50',
             
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i>',
             
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     
@@ -747,11 +775,12 @@ var geojson = {
             coffee: 'Sombreado',
             price: 'R$ 4,50',
             
-            rate:  '',
+            rate:  '<div class="yellow-text text-darken-3"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>',
             
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     
@@ -775,29 +804,32 @@ var geojson = {
             coffee: '3 Corações',
             price: 'R$ 4,90',
             
-            rate:  '',
+            rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
             
-            'marker-size': 'large',
-            'marker-color': '#BE9A6B',
-            'marker-symbol': 'cafe'
+            icon : {
+                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
+                iconSize : [32,32]
+            }
         }
     },
     
     ]
 };
 
-myLayer.on('mouseover', function(e) {
-    e.layer.openPopup();
+var geojson = L.geoJson(json, {
+    onEachFeature: function (feature, layer) {
+        layer.setIcon(L.icon(feature.properties.icon));
+    }
 });
 
-myLayer.on('ready', function() {
-    map.fitBounds(myLayer.getBounds());
-});
+markers.addLayer(geojson);
+markers.addTo(map);
 
-myLayer.on('layeradd', function(e) {
+markers.on('click', function(e) {
+    map.panTo(e.layer.getLatLng(),16);
     var marker = e.layer;
     var feature = marker.feature;
-    var popupContent =  
+    var popupContent =
         '<ul style="margin-left: 2px;">' +
         '<li><a target="_blank" style="max-width:100%" href="' + feature.properties.url + '">' + feature.properties.title +  '</a></li>' +
         '<li>' + feature.properties.rate + '</li>' +
@@ -807,9 +839,29 @@ myLayer.on('layeradd', function(e) {
         '<li><i class="fa fa-credit-card"></i> ' + feature.properties.price + '</li>' +
         '</ul>';
     marker.bindPopup(popupContent, {closeButton: true, minWidth: 320});
+    marker.openPopup();
 });
 
-myLayer.setGeoJSON(geojson);
+if (!navigator.geolocation) {
+    geolocate.innerHTML = 'Geolocation is not available';
+} else {
+    map.locate();
+    geolocate.onclick = function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        map.locate();
+    };
+} 
+
+map.on('locationfound', function(e) {
+    map.fitBounds(e.bounds);
+    map.setZoom(15);
+    geolocate.parentNode.removeChild(geolocate);
+});
+
+map.on('locationerror', function() {
+    geolocate.innerHTML = 'Position could not be found';
+});
     </script>
 
 
