@@ -26,7 +26,7 @@ var json = {
         properties: {
             title: '{{ post.place }}',
             description: '{{ post.location }}',
-            url: '{{ post.url }}',
+            url: '{{ post.url | prepend: site.baseurl }}',
             date: '{{ post.date | date: "%Y-%m-%d" }}',
             location: '{{ post.location }}',
             city: '{{ post.city }}',
