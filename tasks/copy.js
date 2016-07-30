@@ -67,7 +67,7 @@ module.exports = function(grunt){
                 filter: 'isFile'
             },
             {
-                src: 'assets/vendor/leaflet.awesome-markers/dist/leaflet.awesome-markers.css',
+                src: 'assets/vendor/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css',
                 dest: 'assets/css/leaflet.awesome-markers.css',
                 filter: 'isFile'
             },
@@ -145,7 +145,7 @@ module.exports = function(grunt){
                 filter: 'isFile'
             },
             {
-                src: 'assets/vendor/leaflet.awesome-markers/dist/leaflet.awesome-markers.css',
+                src: 'assets/vendor/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css',
                 dest: '_site/assets/css/leaflet.awesome-markers.css',
                 filter: 'isFile'
             },
