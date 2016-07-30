@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="video-container">
     <div id='map' style="position:absolute; top:0; bottom:0; width:100%;"></div>
-    <a href='#' id='geolocate'>MINHA LOCALIZAÇÃO</a>
+    <a href='#' id='geolocate'><i class="fa fa-compass" aria-hidden="true"></i> LOCALIZAÇÃO</a>
     <script>
 
 L.mapbox.accessToken = 'pk.eyJ1Ijoiam9lbHhyIiwiYSI6ImNpcTI3b3l5MzAxM3ZmaW5uMDBnMjYxd2IifQ.8HAKtUOggFVWSy1OlDvx2Q';
@@ -33,6 +33,7 @@ var json = {
             state: '{{ post.state }}',
             coffee: '{{ post.coffee }}',
             price: '{{ post.price }}',
+            rateValue: '{{ post.rate }}',
             {% if post.rate == 0.5 %}
             rate:  '<i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
             {% elsif post.rate == 1 %}
@@ -54,24 +55,32 @@ var json = {
             {% elsif post.rate == 5 %}
             rate:  '<div class="yellow-text text-darken-3"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>',
             {% endif %}
-            icon : {
-                iconUrl : "{{ site.baseurl }}/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     {% endfor %}
     ]
 };
 
-  var redMarker = L.AwesomeMarkers.icon({
+var goodMarker = L.AwesomeMarkers.icon({
     icon: 'coffee',
-    markerColor: 'red'
+    prefix: 'fa',
+    spin: false,
+    markerColor: 'orange',
+    iconColor: 'white'
   });
+
+var badMarker = L.AwesomeMarkers.icon({
+    icon: 'coffee',
+    prefix: 'fa',
+    spin: false,
+    markerColor: 'gray',
+    iconColor: 'white'
+  });
+
 
 var geojson = L.geoJson(json, {
     onEachFeature: function (feature, layer) {
-        layer.setIcon(L.icon(feature.properties.icon));
+         layer.setIcon( (feature.properties.rateValue > 4.0) ? goodMarker : badMarker );
     }
 });
 
@@ -104,7 +113,7 @@ if (!navigator.geolocation) {
         e.stopPropagation();
         map.locate();
     };
-} 
+}
 
 map.on('locationfound', function(e) {
     map.fitBounds(e.bounds);

@@ -212,8 +212,8 @@ pre {
     position: absolute;
     top: 1%;
     left: 10%;
-    width: 158px;
     margin-left: -80px;
+    width: 158px;
     z-index: 1000;
     font-size: 21px;
     text-align: center;
@@ -232,7 +232,7 @@ pre {
 
 @media only screen and (min-width: 768px) {
     #geolocate {
-        left: 8%;
+        left: 15%;
     }
 }
 @media only screen and (max-width: 768px) {
