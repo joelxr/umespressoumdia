@@ -35,10 +35,12 @@
     <!-- Mapbox -->
     <script type="text/javascript" src="/umespressoumdia/assets/js/mapbox.js"></script>
     <script type="text/javascript" src="/umespressoumdia/assets/js/leaflet.markercluster.js"></script>
+    <script type="text/javascript" src="/umespressoumdia/assets/js/leaflet.awesome-markers.js"></script>
     <link type="text/css" rel="stylesheet" href="/umespressoumdia/assets/css/mapbox.css">
     <link type="text/css" rel="stylesheet" href="/umespressoumdia/assets/css/leaflet.css">
     <link type="text/css" rel="stylesheet" href="/umespressoumdia/assets/css/leaflet.markercluster.css">
     <link type="text/css" rel="stylesheet" href="/umespressoumdia/assets/css/leaflet.markercluster.default.css">
+    <link type="text/css" rel="stylesheet" href="/umespressoumdia/assets/css/leaflet.awesome-markers.css">
 
     <title>Um espresso, um dia.</title>
 </head>
@@ -77,7 +79,7 @@
 
         <div class="video-container">
     <div id='map' style="position:absolute; top:0; bottom:0; width:100%;"></div>
-    <a href='#' id='geolocate'>MINHA LOCALIZAÇÃO</a>
+    <a href='#' id='geolocate'><i class="fa fa-compass" aria-hidden="true"></i> LOCALIZAÇÃO</a>
     <script>
 
 L.mapbox.accessToken = 'pk.eyJ1Ijoiam9lbHhyIiwiYSI6ImNpcTI3b3l5MzAxM3ZmaW5uMDBnMjYxd2IifQ.8HAKtUOggFVWSy1OlDvx2Q';
@@ -107,13 +109,10 @@ var json = {
             state: 'CE',
             coffee: '3 Corações',
             price: 'R$ 4,80',
+            rateValue: '2.5',
             
             rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
             
-            icon : {
-                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     
@@ -136,13 +135,10 @@ var json = {
             state: 'CE',
             coffee: 'Sul de Minas',
             price: 'R$ 4,50',
+            rateValue: '3.5',
             
             rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>',
             
-            icon : {
-                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     
@@ -165,13 +161,10 @@ var json = {
             state: 'CE',
             coffee: 'Melitta Espresso',
             price: 'R$ 4,80',
+            rateValue: '4',
             
             rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>',
             
-            icon : {
-                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     
@@ -194,13 +187,10 @@ var json = {
             state: 'CE',
             coffee: 'Delta Cafés Platinum',
             price: 'R$ 4,50',
+            rateValue: '3.5',
             
             rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>',
             
-            icon : {
-                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     
@@ -223,13 +213,10 @@ var json = {
             state: 'CE',
             coffee: 'Kopenhagen Café',
             price: 'R$ 6,00',
+            rateValue: '4.5',
             
             rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i>',
             
-            icon : {
-                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     
@@ -252,13 +239,10 @@ var json = {
             state: 'CE',
             coffee: '3 corações (Cerrado Mineiro)',
             price: 'R$ 5,00',
+            rateValue: '4.5',
             
             rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i>',
             
-            icon : {
-                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     
@@ -281,13 +265,10 @@ var json = {
             state: 'CE',
             coffee: '3 Corações',
             price: 'R$ 4,50',
+            rateValue: '3',
             
             rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
             
-            icon : {
-                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     
@@ -310,13 +291,10 @@ var json = {
             state: 'CE',
             coffee: '3 Corações (Sul de Minas)',
             price: 'R$ 5,00',
+            rateValue: '4.5',
             
             rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i>',
             
-            icon : {
-                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     
@@ -339,13 +317,10 @@ var json = {
             state: 'CE',
             coffee: 'Café do Centro Gourmet',
             price: 'R$ 4,35',
+            rateValue: '3',
             
             rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
             
-            icon : {
-                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     
@@ -368,13 +343,10 @@ var json = {
             state: 'CE',
             coffee: 'Santa Clara',
             price: 'R$ 3,90',
+            rateValue: '1',
             
             rate:  '<i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
             
-            icon : {
-                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     
@@ -397,13 +369,10 @@ var json = {
             state: 'CE',
             coffee: 'Barista Prime',
             price: 'R$ 3,50',
+            rateValue: '3.5',
             
             rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>',
             
-            icon : {
-                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     
@@ -426,13 +395,10 @@ var json = {
             state: 'CE',
             coffee: 'Barista Prime',
             price: 'R$ 3,60',
+            rateValue: '3',
             
             rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
             
-            icon : {
-                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     
@@ -455,13 +421,10 @@ var json = {
             state: 'CE',
             coffee: '3 Corações',
             price: 'R$ 4,50',
+            rateValue: '2',
             
             rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
             
-            icon : {
-                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     
@@ -484,13 +447,10 @@ var json = {
             state: 'CE',
             coffee: '3 corações (Cerrado Mineiro)',
             price: 'R$ 4,80',
+            rateValue: '4.5',
             
             rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i>',
             
-            icon : {
-                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     
@@ -513,13 +473,10 @@ var json = {
             state: 'CE',
             coffee: 'Vanilla',
             price: 'R$ 4,50',
+            rateValue: '4',
             
             rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>',
             
-            icon : {
-                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     
@@ -542,13 +499,10 @@ var json = {
             state: 'CE',
             coffee: 'Lavazza',
             price: 'R$ 5,50',
+            rateValue: '2',
             
             rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
             
-            icon : {
-                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     
@@ -571,13 +525,10 @@ var json = {
             state: 'CE',
             coffee: 'Barista',
             price: 'R$ 3,90',
+            rateValue: '5',
             
             rate:  '<div class="yellow-text text-darken-3"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>',
             
-            icon : {
-                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     
@@ -600,13 +551,10 @@ var json = {
             state: 'CE',
             coffee: 'Piatã',
             price: 'R$ 4,00',
+            rateValue: '4.5',
             
             rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i>',
             
-            icon : {
-                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     
@@ -629,13 +577,10 @@ var json = {
             state: 'CE',
             coffee: 'Bike Café',
             price: 'R$ 3,00',
+            rateValue: '5',
             
             rate:  '<div class="yellow-text text-darken-3"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>',
             
-            icon : {
-                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     
@@ -658,13 +603,10 @@ var json = {
             state: 'CE',
             coffee: 'Arte',
             price: 'R$ 4,00',
+            rateValue: '3.5',
             
             rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>',
             
-            icon : {
-                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     
@@ -687,13 +629,10 @@ var json = {
             state: 'CE',
             coffee: 'Barista Prime',
             price: 'R$ 5,00',
+            rateValue: '3',
             
             rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
             
-            icon : {
-                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     
@@ -716,13 +655,10 @@ var json = {
             state: 'CE',
             coffee: 'Kaphé Especial',
             price: 'R$ 4,80',
+            rateValue: '4',
             
             rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>',
             
-            icon : {
-                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     
@@ -745,13 +681,10 @@ var json = {
             state: 'CE',
             coffee: 'Barista',
             price: 'R$ 4,50',
+            rateValue: '4.5',
             
             rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i>',
             
-            icon : {
-                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     
@@ -774,13 +707,10 @@ var json = {
             state: 'CE',
             coffee: 'Sombreado',
             price: 'R$ 4,50',
+            rateValue: '5',
             
             rate:  '<div class="yellow-text text-darken-3"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>',
             
-            icon : {
-                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     
@@ -803,27 +733,36 @@ var json = {
             state: 'CE',
             coffee: '3 Corações',
             price: 'R$ 4,90',
+            rateValue: '3',
             
             rate:  '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>',
             
-            icon : {
-                iconUrl : "/umespressoumdia/assets/images/icons/map_marker.png",
-                iconSize : [32,32]
-            }
         }
     },
     
     ]
 };
 
-  var redMarker = L.AwesomeMarkers.icon({
+var goodMarker = L.AwesomeMarkers.icon({
     icon: 'coffee',
-    markerColor: 'red'
+    prefix: 'fa',
+    spin: false,
+    markerColor: 'orange',
+    iconColor: 'white'
   });
+
+var badMarker = L.AwesomeMarkers.icon({
+    icon: 'coffee',
+    prefix: 'fa',
+    spin: false,
+    markerColor: 'gray',
+    iconColor: 'white'
+  });
+
 
 var geojson = L.geoJson(json, {
     onEachFeature: function (feature, layer) {
-        layer.setIcon(L.icon(feature.properties.icon));
+         layer.setIcon( (feature.properties.rateValue > 4.0) ? goodMarker : badMarker );
     }
 });
 
@@ -856,7 +795,7 @@ if (!navigator.geolocation) {
         e.stopPropagation();
         map.locate();
     };
-} 
+}
 
 map.on('locationfound', function(e) {
     map.fitBounds(e.bounds);
